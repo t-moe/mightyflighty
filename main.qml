@@ -25,6 +25,24 @@ ApplicationWindow {
          plugin: Plugin {
             name: "osm" //open street map backend
          }
+
+         Plane {
+            pilotName:"anton"
+            coordinate: centerOfEurope
+         }
+
+         MapItemView {
+            model: planeModel
+            delegate: Component {
+
+                Plane {
+                    coordinate: display.CurrentCoordinate
+                    pilotName: display.FlightNumber
+                }
+            }
+         }
+
+
     }
 
 

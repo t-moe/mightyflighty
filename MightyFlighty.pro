@@ -3,7 +3,14 @@ TEMPLATE = app
 QT += qml quick location
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES +=  main.cpp \
+            planemodel.cpp \
+            planeinfo.cpp
+HEADERS += \
+            planemodel.h \
+            planeinfo.h
+
+
 RESOURCES += qml.qrc
 
 linux-arm-gnueabihf-g++ {
@@ -15,3 +22,5 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 include(deployment.pri)
+
+
