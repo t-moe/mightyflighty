@@ -26,10 +26,10 @@ ApplicationWindow {
             name: "osm" //open street map backend
          }
 
-         Plane {
+         /*Plane {
             pilotName:"anton"
             coordinate: centerOfEurope
-         }
+         }*/
 
          MapItemView {
             model: planeModel
@@ -37,12 +37,11 @@ ApplicationWindow {
 
                 Plane {
                     coordinate: display.CurrentCoordinate
-                    pilotName: display.FlightNumber
+                    pilotName: display.CallSign
+                    bearing: display.Heading
                 }
             }
          }
-
-
     }
 
 

@@ -1,7 +1,10 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QNetworkAccessManager>
 #include "planemodel.h"
+#include "flightstatsprovider.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -37,11 +40,19 @@ int main(int argc, char *argv[])
 
 
     PlaneModel planes;
-    planes.addPlane(new PlaneInfo("LX1234",QGeoCoordinate(46.9108846,7.4955513)));
-    planes.addPlane(new PlaneInfo("EX2836",QGeoCoordinate(47.4501756,8.5612913)));
+
+    QNetworkAccessManager man;
+    FlightstatsProvider prov1 (&man);
+
+    planes.addProvider(&prov1);
+    //planes.addPlane(new PlaneInfo("LX1234",QGeoCoordinate(46.9108846,7.4955513),10));
+    //planes.addPlane(new PlaneInfo("EX2836",QGeoCoordinate(47.4501756,8.5612913),190.5));
     engine.rootContext()->setContextProperty("planeModel",&planes);
 
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+
+
+
 
     return app.exec();
 }

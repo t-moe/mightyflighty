@@ -5,10 +5,13 @@ CONFIG += c++11
 
 SOURCES +=  main.cpp \
             planemodel.cpp \
-            planeinfo.cpp
+            planeinfo.cpp \
+            flightstatsprovider.cpp
 HEADERS += \
             planemodel.h \
-            planeinfo.h
+            planeinfo.h \
+            flightstatsprovider.h \
+            abstractprovider.h
 
 
 RESOURCES += qml.qrc
