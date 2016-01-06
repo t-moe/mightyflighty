@@ -1,6 +1,5 @@
 #include "planemodel.h"
 
-
 PlaneModel::PlaneModel()
 {
 
@@ -23,9 +22,15 @@ QVariant PlaneModel::data(const QModelIndex &index, int role) const
 void PlaneModel::addProvider(AbstractProvider *provider)
 {
     _providers.append(provider);
-    connect(provider->qobject(),SIGNAL(newPlane(PlaneInfo*)),this,SLOT(addPlane(PlaneInfo*)));
-    connect(provider->qobject(),SIGNAL(planeRemoved(PlaneInfo*)),this,SLOT(removePlane(PlaneInfo*)));
-    provider->start();
+    connect(provider,SIGNAL(newPlane(PlaneInfo*)),this,SLOT(addPlane(PlaneInfo*)));
+    connect(provider,SIGNAL(planeRemoved(PlaneInfo*)),this,SLOT(removePlane(PlaneInfo*)));
+    //TODO: add already available planes to list?
+    //TODO: add removeProvider Method?
+}
+
+QVariant PlaneModel::providers()
+{
+    return QVariant::fromValue(_providers); //QVariant needed, otherwise QObjectList wont be accepted as model?!
 }
 
 void PlaneModel::addPlane(PlaneInfo *plane)

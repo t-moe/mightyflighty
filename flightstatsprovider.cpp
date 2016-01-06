@@ -6,29 +6,67 @@
 #include <QNetworkReply>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QQmlApplicationEngine>
+#include <QtQuick>
 #include "planeinfo.h"
 
-FlightstatsProvider::FlightstatsProvider(QNetworkAccessManager *manager)
+FlightstatsProvider::FlightstatsProvider(QNetworkAccessManager *manager, QQmlApplicationEngine* engine)
 {
     _manager = manager;
     connect(manager,SIGNAL(finished(QNetworkReply*)),this,SLOT(respFinished(QNetworkReply*)));
+
+    _appId = _settings.value("FlightstatsAppId").toString();
+    _appKey = _settings.value("FlightstatsAppKey").toString();
+    setEnabled(_settings.value("FlightstatsWasEnabled",false).toBool()); //will cause a request if enabled=true!
+
+
+    QQmlComponent comp(engine);
+    comp.loadUrl(QUrl("qrc:///flightstatsconf.qml"));
+    _configItem =  qobject_cast<QQuickItem*>(comp.create());
+    _configItem->childItems().first()->setProperty("model",QVariant::fromValue(this));
+}
+
+QString FlightstatsProvider::name() const
+{
+    return "FlightStats.com API";
+}
+
+void FlightstatsProvider::setEnabled(bool en)
+{
+    if(en!=_enabled) {
+        _enabled = en;
+        _settings.setValue("FlightstatsWasEnabled",en);
+        if(en) {
+            makeSingleRequest();
+            _timerId = startTimer(60000); //re-request every 60s
+        } else {
+            killTimer(_timerId);
+            QMutableHashIterator<QString, PlaneInfo*> it (_planes);
+            while(it.hasNext()) {
+                PlaneInfo* pi = it.next().value();
+                it.remove();
+                emit planeRemoved(pi);
+            }
+        }
+        emit enabledChanged();
+    }
+}
+
+bool FlightstatsProvider::enabled() const
+{
+    return _enabled;
 }
 
 void FlightstatsProvider::makeSingleRequest()
 {
     QGeoCoordinate center(46.8,8.1);
-
-    //Get an api key from flighstats here: https://developer.flightstats.com/getting-started
-    //(Free for limited use, evaluation)
-    QString appId = "<APPID>";
-    QString appKey = "<APPKEY>";
     float radius = 200; //maximum 200 according to docu
 
 
     //API-Doc see: https://developer.flightstats.com/api-docs/flightstatus/v2/flightsNear
     QString uri = "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/%1/%2/%3?appId=%4&appKey=%5";
     uri = uri.arg(center.latitude()).arg(center.longitude()).arg(radius);
-    uri = uri.arg(appId,appKey);
+    uri = uri.arg(_appId,_appKey);
 
    _manager->get(QNetworkRequest(QUrl(uri)));
 
@@ -36,15 +74,9 @@ void FlightstatsProvider::makeSingleRequest()
 
 }
 
-void FlightstatsProvider::start()
+QQuickItem *FlightstatsProvider::configItem()
 {
-    makeSingleRequest();
-    _timerId = startTimer(60000); //re-request every 60s
-}
-
-void FlightstatsProvider::stop()
-{
-    killTimer(_timerId);
+    return _configItem;
 }
 
 QList<PlaneInfo *> FlightstatsProvider::planes() const
@@ -105,8 +137,28 @@ void FlightstatsProvider::timerEvent(QTimerEvent *event)
     makeSingleRequest();
 }
 
-
-QObject *FlightstatsProvider::qobject()
+QString FlightstatsProvider::appKey() const
 {
-    return this;
+    return _appKey;
+}
+
+void FlightstatsProvider::setAppKey(const QString &appKey)
+{
+    if(_appKey==appKey) return;
+    _appKey = appKey;
+    _settings.setValue("FlightstatsAppKey",appKey);
+    emit appKeyChanged();
+}
+
+QString FlightstatsProvider::appId() const
+{
+    return _appId;
+}
+
+void FlightstatsProvider::setAppId(const QString &appId)
+{
+     if(_appId==appId) return;
+    _appId = appId;
+    _settings.setValue("FlightstatsAppId",appId);
+    emit appIdChanged();
 }

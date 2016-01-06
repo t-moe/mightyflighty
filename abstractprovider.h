@@ -2,19 +2,25 @@
 #define ABSTRACTPROVIDER_H
 
 #include "planeinfo.h"
+#include <QQuickItem>
 
-class AbstractProvider {
+
+class AbstractProvider : public QObject {
+    Q_OBJECT
+    Q_PROPERTY(QString name READ name)
+    Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
+    Q_PROPERTY(QQuickItem* configItem READ configItem)
  public:
-    virtual void start() = 0;
-    virtual void stop() = 0;
-    virtual class QObject* qobject() =0;
+    virtual QString name() const = 0;
+    virtual void setEnabled(bool en) =0;
+    virtual bool enabled() const = 0;
     virtual QList<PlaneInfo*> planes() const =0;
+    virtual QQuickItem* configItem() = 0;
 
-public: /* Signal Section */
-    virtual void newPlane(PlaneInfo* pi) = 0;
-    virtual void planeRemoved(PlaneInfo* pi) = 0;
-
-
+signals: /* Signal Section */
+     void newPlane(PlaneInfo* pi);
+     void planeRemoved(PlaneInfo* pi);
+     void enabledChanged();
 
 };
 

@@ -6,7 +6,8 @@ CONFIG += c++11
 SOURCES +=  main.cpp \
             planemodel.cpp \
             planeinfo.cpp \
-            flightstatsprovider.cpp
+            flightstatsprovider.cpp \
+            abstractprovider.cpp
 HEADERS += \
             planemodel.h \
             planeinfo.h \

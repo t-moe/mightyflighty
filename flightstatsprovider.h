@@ -4,25 +4,34 @@
 #include <QObject>
 #include <QHash>
 #include "abstractprovider.h"
+#include <QSettings>
 
 
-class FlightstatsProvider : public QObject, public AbstractProvider
+class FlightstatsProvider : public AbstractProvider
 {
     Q_OBJECT
+    Q_PROPERTY(QString appKey READ appKey WRITE setAppKey NOTIFY appKeyChanged)
+    Q_PROPERTY(QString appId READ appId WRITE setAppId NOTIFY appIdChanged)
 public:
-    explicit FlightstatsProvider(class QNetworkAccessManager* manager);
+    explicit FlightstatsProvider(class QNetworkAccessManager* manager, class QQmlApplicationEngine* eng);
 
+    QString name() const Q_DECL_OVERRIDE;
 
+    void setEnabled(bool en) Q_DECL_OVERRIDE;
+    bool enabled() const Q_DECL_OVERRIDE;
 
-    void start() Q_DECL_OVERRIDE;
-    void stop() Q_DECL_OVERRIDE;
-
+    class QQuickItem *configItem();
     QList<class PlaneInfo*> planes() const;
-    QObject *qobject() Q_DECL_OVERRIDE;
+
+    QString appId() const;
+    void setAppId(const QString &apiId);
+
+    QString appKey() const;
+    void setAppKey(const QString &appKey);
 
 signals:
-    void newPlane(class PlaneInfo* pi) Q_DECL_OVERRIDE;
-    void planeRemoved(class PlaneInfo* pi) Q_DECL_OVERRIDE;
+    void appKeyChanged();
+    void appIdChanged();
 
 public slots:
 
@@ -32,9 +41,14 @@ private slots:
 protected:
     void timerEvent(QTimerEvent *event);
 private:
+    QSettings _settings;
+    QString _appId;
+    QString _appKey;
     QHash<QString,class PlaneInfo*> _planes;
     class QNetworkAccessManager* _manager;
     int _timerId;
+    QQuickItem* _configItem;
+    bool _enabled;
 
     void makeSingleRequest();
 
