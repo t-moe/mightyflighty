@@ -100,9 +100,9 @@ ApplicationWindow {
         border.color: "black"
         id: detailsDialog
         width: 400
-        height: 400
-        anchors.right: parent.right
-        anchors.verticalCenter: parent.verticalCenter
+        height: 160
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
         anchors.margins: 5
         visible: false
         property alias model: detailsRepeater.model
