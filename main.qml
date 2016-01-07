@@ -270,6 +270,7 @@ ApplicationWindow {
                         anchors.fill: parent
                         delegate: Item { //Template for how to render a single row
                             width: parent.width
+                            height: 25
                             Row {
                                 spacing: 5.0
                                 CheckBox {
@@ -279,6 +280,7 @@ ApplicationWindow {
                                     Component.onCompleted: checked = model.modelData.enabled //load checked state on startup
                                 }
                                 Button {
+                                    visible: model.modelData.configItem!==null
                                     anchors.margins: 10
                                     width: 20
                                     height: 20

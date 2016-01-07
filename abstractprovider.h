@@ -9,7 +9,7 @@ class AbstractProvider : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString name READ name CONSTANT)
     Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
-    Q_PROPERTY(QQuickItem* configItem READ configItem)
+    Q_PROPERTY(QQuickItem* configItem READ configItem CONSTANT)
  public:
     virtual QString name() const = 0;
     virtual void setEnabled(bool en) =0;

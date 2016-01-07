@@ -7,12 +7,14 @@ SOURCES +=  main.cpp \
             planemodel.cpp \
             planeinfo.cpp \
             flightstatsprovider.cpp \
-            abstractprovider.cpp
+            abstractprovider.cpp \
+            dummydataprovider.cpp
 HEADERS += \
             planemodel.h \
             planeinfo.h \
             flightstatsprovider.h \
-            abstractprovider.h
+            abstractprovider.h \
+            dummydataprovider.h
 
 
 RESOURCES += qml.qrc

@@ -1,0 +1,5573 @@
+{
+ "request": {
+  "latitude": {
+   "requested": "46.0",
+   "interpreted": 46
+  },
+  "longitude": {
+   "requested": "7.0",
+   "interpreted": 7
+  },
+  "radiusMiles": {
+   "requested": "200",
+   "interpreted": 200
+  },
+  "maxFlights": {},
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/46/7/200"
+ },
+ "appendix": {},
+ "flightPositions": [
+  {
+   "flightId": 652903508,
+   "callsign": "EZY4071",
+   "tailNumber": "GEZOA",
+   "heading": 320.7124559342893,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 3.7783,
+     "lat": 45.5719,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:45.000Z"
+    },
+    {
+     "lon": 3.8977,
+     "lat": 45.4698,
+     "speedMph": 594,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:45.000Z"
+    },
+    {
+     "lon": 4.0399,
+     "lat": 45.3492,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:45.000Z"
+    },
+    {
+     "lon": 4.1837,
+     "lat": 45.2353,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:45.000Z"
+    },
+    {
+     "lon": 4.3249,
+     "lat": 45.1169,
+     "speedMph": 604,
+     "altitudeFt": 34907,
+     "source": "derived",
+     "date": "2016-01-07T20:38:45.000Z"
+    },
+    {
+     "lon": 4.4602,
+     "lat": 45.0055,
+     "speedMph": 604,
+     "altitudeFt": 33796,
+     "source": "derived",
+     "date": "2016-01-07T20:39:45.000Z"
+    },
+    {
+     "lon": 4.5938,
+     "lat": 44.8952,
+     "speedMph": 604,
+     "altitudeFt": 31824,
+     "source": "derived",
+     "date": "2016-01-07T20:40:45.000Z"
+    },
+    {
+     "lon": 4.7259,
+     "lat": 44.7864,
+     "speedMph": 591,
+     "altitudeFt": 30467,
+     "source": "derived",
+     "date": "2016-01-07T20:41:46.000Z"
+    },
+    {
+     "lon": 4.8406,
+     "lat": 44.6896,
+     "speedMph": 518,
+     "altitudeFt": 28700,
+     "source": "derived",
+     "date": "2016-01-07T20:42:46.000Z"
+    },
+    {
+     "lon": 4.9757,
+     "lat": 44.5756,
+     "speedMph": 574,
+     "altitudeFt": 28675,
+     "source": "derived",
+     "date": "2016-01-07T20:43:46.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652869033,
+   "callsign": "MON5409",
+   "tailNumber": "GOJEG",
+   "heading": 135.12693250059044,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 7.806,
+     "lat": 43.4923,
+     "speedMph": 402,
+     "altitudeFt": 36000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:58.000Z"
+    },
+    {
+     "lon": 7.7115,
+     "lat": 43.5612,
+     "speedMph": 396,
+     "altitudeFt": 36000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:58.000Z"
+    },
+    {
+     "lon": 7.6267,
+     "lat": 43.6371,
+     "speedMph": 407,
+     "altitudeFt": 36022,
+     "source": "derived",
+     "date": "2016-01-07T20:36:58.000Z"
+    },
+    {
+     "lon": 7.5532,
+     "lat": 43.7154,
+     "speedMph": 413,
+     "altitudeFt": 36047,
+     "source": "derived",
+     "date": "2016-01-07T20:37:58.000Z"
+    },
+    {
+     "lon": 7.4754,
+     "lat": 43.803,
+     "speedMph": 439,
+     "altitudeFt": 36043,
+     "source": "derived",
+     "date": "2016-01-07T20:38:58.000Z"
+    },
+    {
+     "lon": 7.4031,
+     "lat": 43.8956,
+     "speedMph": 455,
+     "altitudeFt": 36036,
+     "source": "derived",
+     "date": "2016-01-07T20:39:58.000Z"
+    },
+    {
+     "lon": 7.3194,
+     "lat": 43.9794,
+     "speedMph": 439,
+     "altitudeFt": 36016,
+     "source": "derived",
+     "date": "2016-01-07T20:40:58.000Z"
+    },
+    {
+     "lon": 7.2402,
+     "lat": 44.0664,
+     "speedMph": 440,
+     "altitudeFt": 36007,
+     "source": "derived",
+     "date": "2016-01-07T20:41:58.000Z"
+    },
+    {
+     "lon": 7.1589,
+     "lat": 44.1549,
+     "speedMph": 444,
+     "altitudeFt": 36002,
+     "source": "derived",
+     "date": "2016-01-07T20:42:58.000Z"
+    },
+    {
+     "lon": 7.0832,
+     "lat": 44.2372,
+     "speedMph": 426,
+     "altitudeFt": 35995,
+     "source": "derived",
+     "date": "2016-01-07T20:43:58.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652870653,
+   "callsign": "DLH304",
+   "tailNumber": "DABED",
+   "heading": 31.434433181421046,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.1804,
+     "lat": 45.3324,
+     "speedMph": 390,
+     "altitudeFt": 11673,
+     "source": "derived",
+     "date": "2016-01-07T20:35:03.000Z"
+    },
+    {
+     "lon": 8.115,
+     "lat": 45.2572,
+     "speedMph": 363,
+     "altitudeFt": 9694,
+     "source": "derived",
+     "date": "2016-01-07T20:36:03.000Z"
+    },
+    {
+     "lon": 8.0383,
+     "lat": 45.1915,
+     "speedMph": 341,
+     "altitudeFt": 7959,
+     "source": "derived",
+     "date": "2016-01-07T20:37:03.000Z"
+    },
+    {
+     "lon": 7.9711,
+     "lat": 45.1371,
+     "speedMph": 298,
+     "altitudeFt": 6460,
+     "source": "derived",
+     "date": "2016-01-07T20:38:03.000Z"
+    },
+    {
+     "lon": 7.9,
+     "lat": 45.0846,
+     "speedMph": 280,
+     "altitudeFt": 5175,
+     "source": "derived",
+     "date": "2016-01-07T20:39:03.000Z"
+    },
+    {
+     "lon": 7.8289,
+     "lat": 45.0431,
+     "speedMph": 260,
+     "altitudeFt": 3948,
+     "source": "derived",
+     "date": "2016-01-07T20:40:03.000Z"
+    },
+    {
+     "lon": 7.7345,
+     "lat": 45.0183,
+     "speedMph": 261,
+     "altitudeFt": 4295,
+     "source": "derived",
+     "date": "2016-01-07T20:41:03.000Z"
+    },
+    {
+     "lon": 7.6491,
+     "lat": 44.9983,
+     "speedMph": 264,
+     "altitudeFt": 3118,
+     "source": "derived",
+     "date": "2016-01-07T20:42:03.000Z"
+    },
+    {
+     "lon": 7.5596,
+     "lat": 44.9876,
+     "speedMph": 269,
+     "altitudeFt": 2150,
+     "source": "derived",
+     "date": "2016-01-07T20:43:03.000Z"
+    },
+    {
+     "lon": 7.4178,
+     "lat": 44.9797,
+     "speedMph": 358,
+     "altitudeFt": 2181,
+     "source": "derived",
+     "date": "2016-01-07T20:44:03.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652870441,
+   "callsign": "SAA261",
+   "tailNumber": "ZSSNH",
+   "heading": 359.16130857455926,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.6685,
+     "lat": 45.9813,
+     "speedMph": 603,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:15.000Z"
+    },
+    {
+     "lon": 8.6717,
+     "lat": 45.8294,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:15.000Z"
+    },
+    {
+     "lon": 8.6737,
+     "lat": 45.6948,
+     "speedMph": 569,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:15.000Z"
+    },
+    {
+     "lon": 8.6747,
+     "lat": 45.5442,
+     "speedMph": 590,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:15.000Z"
+    },
+    {
+     "lon": 8.6777,
+     "lat": 45.3849,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:16.000Z"
+    },
+    {
+     "lon": 8.6808,
+     "lat": 45.2331,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:16.000Z"
+    },
+    {
+     "lon": 8.6832,
+     "lat": 45.0892,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:16.000Z"
+    },
+    {
+     "lon": 8.6857,
+     "lat": 44.9422,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:16.000Z"
+    },
+    {
+     "lon": 8.6884,
+     "lat": 44.7937,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:16.000Z"
+    },
+    {
+     "lon": 8.6911,
+     "lat": 44.6498,
+     "speedMph": 580,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:16.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652902863,
+   "callsign": "QTR8112",
+   "tailNumber": "A7BFG",
+   "heading": 276.4361472617311,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 3.0205,
+     "lat": 45.8611,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:19.000Z"
+    },
+    {
+     "lon": 3.2487,
+     "lat": 45.8434,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:19.000Z"
+    },
+    {
+     "lon": 3.4766,
+     "lat": 45.8209,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:19.000Z"
+    },
+    {
+     "lon": 3.6375,
+     "lat": 45.8029,
+     "speedMph": 519,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:19.000Z"
+    },
+    {
+     "lon": 3.9062,
+     "lat": 45.7695,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:19.000Z"
+    },
+    {
+     "lon": 4.1359,
+     "lat": 45.7256,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:19.000Z"
+    },
+    {
+     "lon": 4.3554,
+     "lat": 45.6751,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:19.000Z"
+    },
+    {
+     "lon": 4.5745,
+     "lat": 45.6192,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:19.000Z"
+    },
+    {
+     "lon": 4.7767,
+     "lat": 45.5647,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:19.000Z"
+    },
+    {
+     "lon": 4.9824,
+     "lat": 45.5086,
+     "speedMph": 594,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:19.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652889596,
+   "callsign": "BAW364",
+   "tailNumber": "GEUUJ",
+   "heading": 320.02990409205034,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.5709,
+     "lat": 45.943,
+     "speedMph": 386,
+     "altitudeFt": 10186,
+     "source": "derived",
+     "date": "2016-01-07T20:34:30.000Z"
+    },
+    {
+     "lon": 4.6523,
+     "lat": 45.8755,
+     "speedMph": 356,
+     "altitudeFt": 8921,
+     "source": "derived",
+     "date": "2016-01-07T20:35:30.000Z"
+    },
+    {
+     "lon": 4.727,
+     "lat": 45.812,
+     "speedMph": 320,
+     "altitudeFt": 7964,
+     "source": "derived",
+     "date": "2016-01-07T20:36:30.000Z"
+    },
+    {
+     "lon": 4.7988,
+     "lat": 45.7517,
+     "speedMph": 312,
+     "altitudeFt": 7287,
+     "source": "derived",
+     "date": "2016-01-07T20:37:30.000Z"
+    },
+    {
+     "lon": 4.8688,
+     "lat": 45.6931,
+     "speedMph": 301,
+     "altitudeFt": 6885,
+     "source": "derived",
+     "date": "2016-01-07T20:38:30.000Z"
+    },
+    {
+     "lon": 4.9342,
+     "lat": 45.6376,
+     "speedMph": 288,
+     "altitudeFt": 6413,
+     "source": "derived",
+     "date": "2016-01-07T20:39:30.000Z"
+    },
+    {
+     "lon": 4.9962,
+     "lat": 45.587,
+     "speedMph": 272,
+     "altitudeFt": 5687,
+     "source": "derived",
+     "date": "2016-01-07T20:40:30.000Z"
+    },
+    {
+     "lon": 5.0597,
+     "lat": 45.5583,
+     "speedMph": 220,
+     "altitudeFt": 4884,
+     "source": "derived",
+     "date": "2016-01-07T20:41:30.000Z"
+    },
+    {
+     "lon": 5.1026,
+     "lat": 45.5564,
+     "speedMph": 140,
+     "altitudeFt": 3976,
+     "source": "derived",
+     "date": "2016-01-07T20:42:30.000Z"
+    },
+    {
+     "lon": 5.1096,
+     "lat": 45.6026,
+     "speedMph": 165,
+     "altitudeFt": 2969,
+     "source": "derived",
+     "date": "2016-01-07T20:43:30.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652899528,
+   "callsign": "AFR6241",
+   "heading": 147.4903560125116,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.2189,
+     "lat": 44.7866,
+     "speedMph": 341,
+     "altitudeFt": 15689,
+     "source": "derived",
+     "date": "2016-01-07T20:35:10.000Z"
+    },
+    {
+     "lon": 6.1557,
+     "lat": 44.857,
+     "speedMph": 351,
+     "altitudeFt": 16722,
+     "source": "derived",
+     "date": "2016-01-07T20:36:10.000Z"
+    },
+    {
+     "lon": 6.0906,
+     "lat": 44.9294,
+     "speedMph": 361,
+     "altitudeFt": 17759,
+     "source": "derived",
+     "date": "2016-01-07T20:37:10.000Z"
+    },
+    {
+     "lon": 6.0234,
+     "lat": 45.0037,
+     "speedMph": 370,
+     "altitudeFt": 18793,
+     "source": "derived",
+     "date": "2016-01-07T20:38:10.000Z"
+    },
+    {
+     "lon": 5.9543,
+     "lat": 45.08,
+     "speedMph": 381,
+     "altitudeFt": 19826,
+     "source": "derived",
+     "date": "2016-01-07T20:39:10.000Z"
+    },
+    {
+     "lon": 5.8831,
+     "lat": 45.1584,
+     "speedMph": 390,
+     "altitudeFt": 20863,
+     "source": "derived",
+     "date": "2016-01-07T20:40:10.000Z"
+    },
+    {
+     "lon": 5.8099,
+     "lat": 45.2386,
+     "speedMph": 400,
+     "altitudeFt": 21896,
+     "source": "derived",
+     "date": "2016-01-07T20:41:10.000Z"
+    },
+    {
+     "lon": 5.7067,
+     "lat": 45.3513,
+     "speedMph": 434,
+     "altitudeFt": 23448,
+     "source": "derived",
+     "date": "2016-01-07T20:42:10.000Z"
+    },
+    {
+     "lon": 5.6246,
+     "lat": 45.4406,
+     "speedMph": 446,
+     "altitudeFt": 24524,
+     "source": "derived",
+     "date": "2016-01-07T20:43:10.000Z"
+    },
+    {
+     "lon": 5.5401,
+     "lat": 45.5322,
+     "speedMph": 458,
+     "altitudeFt": 25597,
+     "source": "derived",
+     "date": "2016-01-07T20:44:10.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652869237,
+   "callsign": "EZY4250",
+   "tailNumber": "GEZTJ",
+   "heading": 146.53764596866654,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.9143,
+     "lat": 45.4316,
+     "speedMph": 412,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:15.000Z"
+    },
+    {
+     "lon": 5.8354,
+     "lat": 45.5154,
+     "speedMph": 414,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:15.000Z"
+    },
+    {
+     "lon": 5.7568,
+     "lat": 45.5984,
+     "speedMph": 413,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:15.000Z"
+    },
+    {
+     "lon": 5.6774,
+     "lat": 45.6819,
+     "speedMph": 414,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:15.000Z"
+    },
+    {
+     "lon": 5.5971,
+     "lat": 45.766,
+     "speedMph": 416,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:15.000Z"
+    },
+    {
+     "lon": 5.518,
+     "lat": 45.849,
+     "speedMph": 415,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:15.000Z"
+    },
+    {
+     "lon": 5.439,
+     "lat": 45.9314,
+     "speedMph": 411,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:15.000Z"
+    },
+    {
+     "lon": 5.3666,
+     "lat": 46.0083,
+     "speedMph": 393,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:16.000Z"
+    },
+    {
+     "lon": 5.2862,
+     "lat": 46.0936,
+     "speedMph": 410,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:16.000Z"
+    },
+    {
+     "lon": 5.2064,
+     "lat": 46.1785,
+     "speedMph": 418,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:16.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652850657,
+   "callsign": "BEL3593",
+   "tailNumber": "OOSSG",
+   "heading": 46.62474555005909,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.9303,
+     "lat": 46.3757,
+     "speedMph": 402,
+     "altitudeFt": 16998,
+     "source": "derived",
+     "date": "2016-01-07T20:35:20.000Z"
+    },
+    {
+     "lon": 5.8382,
+     "lat": 46.3157,
+     "speedMph": 372,
+     "altitudeFt": 16537,
+     "source": "derived",
+     "date": "2016-01-07T20:36:20.000Z"
+    },
+    {
+     "lon": 5.7308,
+     "lat": 46.2717,
+     "speedMph": 358,
+     "altitudeFt": 15880,
+     "source": "derived",
+     "date": "2016-01-07T20:37:20.000Z"
+    },
+    {
+     "lon": 5.6167,
+     "lat": 46.2357,
+     "speedMph": 370,
+     "altitudeFt": 14775,
+     "source": "derived",
+     "date": "2016-01-07T20:38:20.000Z"
+    },
+    {
+     "lon": 5.5207,
+     "lat": 46.191,
+     "speedMph": 342,
+     "altitudeFt": 13230,
+     "source": "derived",
+     "date": "2016-01-07T20:39:20.000Z"
+    },
+    {
+     "lon": 5.4604,
+     "lat": 46.1207,
+     "speedMph": 317,
+     "altitudeFt": 11383,
+     "source": "derived",
+     "date": "2016-01-07T20:40:20.000Z"
+    },
+    {
+     "lon": 5.4274,
+     "lat": 46.0346,
+     "speedMph": 386,
+     "altitudeFt": 9921,
+     "source": "derived",
+     "date": "2016-01-07T20:41:20.000Z"
+    },
+    {
+     "lon": 5.4028,
+     "lat": 45.9465,
+     "speedMph": 407,
+     "altitudeFt": 8812,
+     "source": "derived",
+     "date": "2016-01-07T20:42:20.000Z"
+    },
+    {
+     "lon": 5.3846,
+     "lat": 45.8569,
+     "speedMph": 412,
+     "altitudeFt": 8074,
+     "source": "derived",
+     "date": "2016-01-07T20:43:20.000Z"
+    },
+    {
+     "lon": 5.3596,
+     "lat": 45.7732,
+     "speedMph": 386,
+     "altitudeFt": 7494,
+     "source": "derived",
+     "date": "2016-01-07T20:44:20.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652869194,
+   "callsign": "MON3567",
+   "tailNumber": "GZBAK",
+   "heading": 145.6294839299999,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.2017,
+     "lat": 45.1926,
+     "speedMph": 429,
+     "altitudeFt": 38003,
+     "source": "derived",
+     "date": "2016-01-07T20:35:14.000Z"
+    },
+    {
+     "lon": 6.1171,
+     "lat": 45.2798,
+     "speedMph": 435,
+     "altitudeFt": 38013,
+     "source": "derived",
+     "date": "2016-01-07T20:36:14.000Z"
+    },
+    {
+     "lon": 6.0336,
+     "lat": 45.3657,
+     "speedMph": 436,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:14.000Z"
+    },
+    {
+     "lon": 5.9509,
+     "lat": 45.4501,
+     "speedMph": 431,
+     "altitudeFt": 38003,
+     "source": "derived",
+     "date": "2016-01-07T20:38:14.000Z"
+    },
+    {
+     "lon": 5.8667,
+     "lat": 45.5361,
+     "speedMph": 428,
+     "altitudeFt": 38006,
+     "source": "derived",
+     "date": "2016-01-07T20:39:14.000Z"
+    },
+    {
+     "lon": 5.7823,
+     "lat": 45.6215,
+     "speedMph": 426,
+     "altitudeFt": 38002,
+     "source": "derived",
+     "date": "2016-01-07T20:40:14.000Z"
+    },
+    {
+     "lon": 5.6976,
+     "lat": 45.707,
+     "speedMph": 430,
+     "altitudeFt": 37997,
+     "source": "derived",
+     "date": "2016-01-07T20:41:14.000Z"
+    },
+    {
+     "lon": 5.612,
+     "lat": 45.7931,
+     "speedMph": 433,
+     "altitudeFt": 37991,
+     "source": "derived",
+     "date": "2016-01-07T20:42:14.000Z"
+    },
+    {
+     "lon": 5.5294,
+     "lat": 45.8763,
+     "speedMph": 427,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:14.000Z"
+    },
+    {
+     "lon": 5.4448,
+     "lat": 45.9615,
+     "speedMph": 426,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:14.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853759,
+   "callsign": "BCY1502",
+   "heading": 317.2127104721642,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.1694,
+     "lat": 47.8822,
+     "speedMph": 425,
+     "altitudeFt": 19357,
+     "source": "derived",
+     "date": "2016-01-07T20:34:47.000Z"
+    },
+    {
+     "lon": 4.2756,
+     "lat": 47.8053,
+     "speedMph": 443,
+     "altitudeFt": 20564,
+     "source": "derived",
+     "date": "2016-01-07T20:35:47.000Z"
+    },
+    {
+     "lon": 4.3859,
+     "lat": 47.7251,
+     "speedMph": 461,
+     "altitudeFt": 21772,
+     "source": "derived",
+     "date": "2016-01-07T20:36:47.000Z"
+    },
+    {
+     "lon": 4.5002,
+     "lat": 47.6417,
+     "speedMph": 479,
+     "altitudeFt": 22979,
+     "source": "derived",
+     "date": "2016-01-07T20:37:47.000Z"
+    },
+    {
+     "lon": 4.6184,
+     "lat": 47.5549,
+     "speedMph": 497,
+     "altitudeFt": 24186,
+     "source": "derived",
+     "date": "2016-01-07T20:38:47.000Z"
+    },
+    {
+     "lon": 4.7406,
+     "lat": 47.4649,
+     "speedMph": 515,
+     "altitudeFt": 25394,
+     "source": "derived",
+     "date": "2016-01-07T20:39:47.000Z"
+    },
+    {
+     "lon": 4.8667,
+     "lat": 47.3715,
+     "speedMph": 533,
+     "altitudeFt": 26601,
+     "source": "derived",
+     "date": "2016-01-07T20:40:47.000Z"
+    },
+    {
+     "lon": 4.9967,
+     "lat": 47.2747,
+     "speedMph": 551,
+     "altitudeFt": 27808,
+     "source": "derived",
+     "date": "2016-01-07T20:41:47.000Z"
+    },
+    {
+     "lon": 5.1304,
+     "lat": 47.1746,
+     "speedMph": 569,
+     "altitudeFt": 29016,
+     "source": "derived",
+     "date": "2016-01-07T20:42:47.000Z"
+    },
+    {
+     "lon": 5.2679,
+     "lat": 47.0711,
+     "speedMph": 587,
+     "altitudeFt": 30223,
+     "source": "derived",
+     "date": "2016-01-07T20:43:47.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652873263,
+   "callsign": "BAW743",
+   "tailNumber": "GEUPJ",
+   "heading": 66.933628688403,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.1058,
+     "lat": 46.2296,
+     "speedMph": 168,
+     "altitudeFt": 1411,
+     "source": "derived",
+     "date": "2016-01-07T20:36:00.000Z"
+    },
+    {
+     "lon": 5.8957,
+     "lat": 46.1679,
+     "speedMph": 272,
+     "source": "derived",
+     "date": "2016-01-07T20:36:10.000Z"
+    },
+    {
+     "lon": 5.8306,
+     "lat": 46.2363,
+     "speedMph": 386,
+     "source": "derived",
+     "date": "2016-01-07T20:37:10.000Z"
+    },
+    {
+     "lon": 5.7547,
+     "lat": 46.3219,
+     "speedMph": 499,
+     "altitudeFt": 14937,
+     "source": "derived",
+     "date": "2016-01-07T20:38:10.000Z"
+    },
+    {
+     "lon": 5.6826,
+     "lat": 46.4114,
+     "speedMph": 552,
+     "altitudeFt": 18502,
+     "source": "derived",
+     "date": "2016-01-07T20:39:10.000Z"
+    },
+    {
+     "lon": 5.6154,
+     "lat": 46.4966,
+     "speedMph": 542,
+     "altitudeFt": 21653,
+     "source": "derived",
+     "date": "2016-01-07T20:40:10.000Z"
+    },
+    {
+     "lon": 5.5458,
+     "lat": 46.5795,
+     "speedMph": 456,
+     "altitudeFt": 24232,
+     "source": "derived",
+     "date": "2016-01-07T20:41:10.000Z"
+    },
+    {
+     "lon": 5.4737,
+     "lat": 46.6613,
+     "speedMph": 414,
+     "altitudeFt": 26330,
+     "source": "derived",
+     "date": "2016-01-07T20:42:10.000Z"
+    },
+    {
+     "lon": 5.3966,
+     "lat": 46.7498,
+     "speedMph": 423,
+     "altitudeFt": 28097,
+     "source": "derived",
+     "date": "2016-01-07T20:43:10.000Z"
+    },
+    {
+     "lon": 5.32,
+     "lat": 46.8387,
+     "speedMph": 431,
+     "altitudeFt": 30054,
+     "source": "derived",
+     "date": "2016-01-07T20:44:10.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652898782,
+   "callsign": "VLG9435",
+   "tailNumber": "ECMEA",
+   "heading": 128.72541384692727,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.0192,
+     "lat": 46.6958,
+     "speedMph": 407,
+     "altitudeFt": 35823,
+     "source": "derived",
+     "date": "2016-01-07T20:34:45.000Z"
+    },
+    {
+     "lon": 5.9053,
+     "lat": 46.7585,
+     "speedMph": 421,
+     "altitudeFt": 36111,
+     "source": "derived",
+     "date": "2016-01-07T20:35:46.000Z"
+    },
+    {
+     "lon": 5.7995,
+     "lat": 46.8187,
+     "speedMph": 410,
+     "altitudeFt": 36367,
+     "source": "derived",
+     "date": "2016-01-07T20:36:46.000Z"
+    },
+    {
+     "lon": 5.6912,
+     "lat": 46.8792,
+     "speedMph": 393,
+     "altitudeFt": 35976,
+     "source": "derived",
+     "date": "2016-01-07T20:37:46.000Z"
+    },
+    {
+     "lon": 5.5888,
+     "lat": 46.9363,
+     "speedMph": 387,
+     "altitudeFt": 35193,
+     "source": "derived",
+     "date": "2016-01-07T20:38:46.000Z"
+    },
+    {
+     "lon": 5.489,
+     "lat": 46.9914,
+     "speedMph": 359,
+     "altitudeFt": 34241,
+     "source": "derived",
+     "date": "2016-01-07T20:39:46.000Z"
+    },
+    {
+     "lon": 5.3912,
+     "lat": 47.0453,
+     "speedMph": 350,
+     "altitudeFt": 33331,
+     "source": "derived",
+     "date": "2016-01-07T20:40:46.000Z"
+    },
+    {
+     "lon": 5.2877,
+     "lat": 47.1021,
+     "speedMph": 361,
+     "altitudeFt": 31975,
+     "source": "derived",
+     "date": "2016-01-07T20:41:46.000Z"
+    },
+    {
+     "lon": 5.1834,
+     "lat": 47.1592,
+     "speedMph": 372,
+     "altitudeFt": 30990,
+     "source": "derived",
+     "date": "2016-01-07T20:42:46.000Z"
+    },
+    {
+     "lon": 5.0752,
+     "lat": 47.2184,
+     "speedMph": 395,
+     "altitudeFt": 29973,
+     "source": "derived",
+     "date": "2016-01-07T20:43:46.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652898755,
+   "callsign": "EZY2286",
+   "tailNumber": "GEZAY",
+   "heading": 137.6757295603343,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.0275,
+     "lat": 46.9013,
+     "speedMph": 442,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:57.000Z"
+    },
+    {
+     "lon": 5.922,
+     "lat": 46.9805,
+     "speedMph": 457,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:57.000Z"
+    },
+    {
+     "lon": 5.8182,
+     "lat": 47.0582,
+     "speedMph": 449,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:57.000Z"
+    },
+    {
+     "lon": 5.719,
+     "lat": 47.1318,
+     "speedMph": 425,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:57.000Z"
+    },
+    {
+     "lon": 5.6224,
+     "lat": 47.2037,
+     "speedMph": 385,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:57.000Z"
+    },
+    {
+     "lon": 5.5218,
+     "lat": 47.2782,
+     "speedMph": 398,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:57.000Z"
+    },
+    {
+     "lon": 5.4079,
+     "lat": 47.3609,
+     "speedMph": 451,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:57.000Z"
+    },
+    {
+     "lon": 5.3005,
+     "lat": 47.439,
+     "speedMph": 461,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:57.000Z"
+    },
+    {
+     "lon": 5.1912,
+     "lat": 47.5183,
+     "speedMph": 462,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:57.000Z"
+    },
+    {
+     "lon": 5.0959,
+     "lat": 47.5869,
+     "speedMph": 425,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:57.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652899500,
+   "callsign": "EZY8360",
+   "tailNumber": "GEZIO",
+   "heading": 151.90083468635785,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.4643,
+     "lat": 44.4169,
+     "speedMph": 416,
+     "altitudeFt": 32868,
+     "source": "derived",
+     "date": "2016-01-07T20:34:41.000Z"
+    },
+    {
+     "lon": 6.4004,
+     "lat": 44.5024,
+     "speedMph": 414,
+     "altitudeFt": 34142,
+     "source": "derived",
+     "date": "2016-01-07T20:35:41.000Z"
+    },
+    {
+     "lon": 6.3351,
+     "lat": 44.5895,
+     "speedMph": 412,
+     "altitudeFt": 35314,
+     "source": "derived",
+     "date": "2016-01-07T20:36:41.000Z"
+    },
+    {
+     "lon": 6.2699,
+     "lat": 44.6762,
+     "speedMph": 404,
+     "altitudeFt": 36273,
+     "source": "derived",
+     "date": "2016-01-07T20:37:41.000Z"
+    },
+    {
+     "lon": 6.2045,
+     "lat": 44.7627,
+     "speedMph": 408,
+     "altitudeFt": 37161,
+     "source": "derived",
+     "date": "2016-01-07T20:38:41.000Z"
+    },
+    {
+     "lon": 6.1377,
+     "lat": 44.8512,
+     "speedMph": 421,
+     "altitudeFt": 37733,
+     "source": "derived",
+     "date": "2016-01-07T20:39:41.000Z"
+    },
+    {
+     "lon": 6.0683,
+     "lat": 44.9424,
+     "speedMph": 431,
+     "altitudeFt": 38032,
+     "source": "derived",
+     "date": "2016-01-07T20:40:41.000Z"
+    },
+    {
+     "lon": 5.9976,
+     "lat": 45.0352,
+     "speedMph": 440,
+     "altitudeFt": 38712,
+     "source": "derived",
+     "date": "2016-01-07T20:41:41.000Z"
+    },
+    {
+     "lon": 5.9285,
+     "lat": 45.1255,
+     "speedMph": 437,
+     "altitudeFt": 38403,
+     "source": "derived",
+     "date": "2016-01-07T20:42:41.000Z"
+    },
+    {
+     "lon": 5.8557,
+     "lat": 45.2201,
+     "speedMph": 446,
+     "altitudeFt": 38251,
+     "source": "derived",
+     "date": "2016-01-07T20:43:41.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652892515,
+   "callsign": "SWR2033",
+   "tailNumber": "HBJLS",
+   "heading": 241.37046144120657,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.2723,
+     "lat": 45.0468,
+     "speedMph": 593,
+     "altitudeFt": 36054,
+     "source": "derived",
+     "date": "2016-01-07T20:34:30.000Z"
+    },
+    {
+     "lon": 4.4511,
+     "lat": 45.1159,
+     "speedMph": 594,
+     "altitudeFt": 36037,
+     "source": "derived",
+     "date": "2016-01-07T20:35:30.000Z"
+    },
+    {
+     "lon": 4.63,
+     "lat": 45.1846,
+     "speedMph": 591,
+     "altitudeFt": 36021,
+     "source": "derived",
+     "date": "2016-01-07T20:36:30.000Z"
+    },
+    {
+     "lon": 4.8071,
+     "lat": 45.2523,
+     "speedMph": 587,
+     "altitudeFt": 36003,
+     "source": "derived",
+     "date": "2016-01-07T20:37:30.000Z"
+    },
+    {
+     "lon": 4.9821,
+     "lat": 45.319,
+     "speedMph": 579,
+     "altitudeFt": 35992,
+     "source": "derived",
+     "date": "2016-01-07T20:38:30.000Z"
+    },
+    {
+     "lon": 5.1422,
+     "lat": 45.3947,
+     "speedMph": 563,
+     "altitudeFt": 35978,
+     "source": "derived",
+     "date": "2016-01-07T20:39:30.000Z"
+    },
+    {
+     "lon": 5.2865,
+     "lat": 45.4783,
+     "speedMph": 546,
+     "altitudeFt": 35991,
+     "source": "derived",
+     "date": "2016-01-07T20:40:30.000Z"
+    },
+    {
+     "lon": 5.4294,
+     "lat": 45.5653,
+     "speedMph": 542,
+     "altitudeFt": 36000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:30.000Z"
+    },
+    {
+     "lon": 5.5708,
+     "lat": 45.6536,
+     "speedMph": 543,
+     "altitudeFt": 36018,
+     "source": "derived",
+     "date": "2016-01-07T20:42:30.000Z"
+    },
+    {
+     "lon": 5.7078,
+     "lat": 45.7441,
+     "speedMph": 546,
+     "altitudeFt": 36021,
+     "source": "derived",
+     "date": "2016-01-07T20:43:30.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652890548,
+   "callsign": "TAP928",
+   "tailNumber": "CSTNI",
+   "heading": 232.1827294288975,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.7577,
+     "lat": 45.2638,
+     "speedMph": 581,
+     "altitudeFt": 37803,
+     "source": "derived",
+     "date": "2016-01-07T20:35:21.000Z"
+    },
+    {
+     "lon": 4.9131,
+     "lat": 45.3488,
+     "speedMph": 574,
+     "altitudeFt": 37224,
+     "source": "derived",
+     "date": "2016-01-07T20:36:21.000Z"
+    },
+    {
+     "lon": 5.0432,
+     "lat": 45.4203,
+     "speedMph": 510,
+     "altitudeFt": 36649,
+     "source": "derived",
+     "date": "2016-01-07T20:37:21.000Z"
+    },
+    {
+     "lon": 5.2114,
+     "lat": 45.5078,
+     "speedMph": 551,
+     "altitudeFt": 36132,
+     "source": "derived",
+     "date": "2016-01-07T20:38:21.000Z"
+    },
+    {
+     "lon": 5.3661,
+     "lat": 45.5904,
+     "speedMph": 557,
+     "altitudeFt": 35933,
+     "source": "derived",
+     "date": "2016-01-07T20:39:21.000Z"
+    },
+    {
+     "lon": 5.5235,
+     "lat": 45.6724,
+     "speedMph": 565,
+     "altitudeFt": 35905,
+     "source": "derived",
+     "date": "2016-01-07T20:40:21.000Z"
+    },
+    {
+     "lon": 5.6755,
+     "lat": 45.7516,
+     "speedMph": 564,
+     "altitudeFt": 35755,
+     "source": "derived",
+     "date": "2016-01-07T20:41:21.000Z"
+    },
+    {
+     "lon": 5.8269,
+     "lat": 45.8308,
+     "speedMph": 553,
+     "altitudeFt": 35913,
+     "source": "derived",
+     "date": "2016-01-07T20:42:21.000Z"
+    },
+    {
+     "lon": 5.9691,
+     "lat": 45.9083,
+     "speedMph": 529,
+     "altitudeFt": 35972,
+     "source": "derived",
+     "date": "2016-01-07T20:43:21.000Z"
+    },
+    {
+     "lon": 6.1069,
+     "lat": 45.9864,
+     "speedMph": 493,
+     "altitudeFt": 36000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:21.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652866286,
+   "callsign": "RYR7242",
+   "tailNumber": "EIEBP",
+   "heading": 306.56514078175934,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.7844,
+     "lat": 46.6034,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:07.000Z"
+    },
+    {
+     "lon": 4.9599,
+     "lat": 46.5141,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:07.000Z"
+    },
+    {
+     "lon": 5.1311,
+     "lat": 46.4245,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:07.000Z"
+    },
+    {
+     "lon": 5.2923,
+     "lat": 46.3398,
+     "speedMph": 576,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:07.000Z"
+    },
+    {
+     "lon": 5.4611,
+     "lat": 46.2495,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:07.000Z"
+    },
+    {
+     "lon": 5.6234,
+     "lat": 46.1646,
+     "speedMph": 601,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:07.000Z"
+    },
+    {
+     "lon": 5.7888,
+     "lat": 46.0763,
+     "speedMph": 584,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:07.000Z"
+    },
+    {
+     "lon": 5.9449,
+     "lat": 45.9928,
+     "speedMph": 578,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:07.000Z"
+    },
+    {
+     "lon": 6.112,
+     "lat": 45.9027,
+     "speedMph": 594,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:07.000Z"
+    },
+    {
+     "lon": 6.2789,
+     "lat": 45.8119,
+     "speedMph": 604,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:07.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652873291,
+   "callsign": "EZY1954",
+   "tailNumber": "GEZFZ",
+   "heading": 39.38544149850743,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.2512,
+     "lat": 46.3475,
+     "speedMph": 297,
+     "altitudeFt": 1411,
+     "source": "derived",
+     "date": "2016-01-07T20:39:27.000Z"
+    },
+    {
+     "lon": 6.1466,
+     "lat": 46.2596,
+     "speedMph": 78,
+     "source": "derived",
+     "date": "2016-01-07T20:40:27.000Z"
+    },
+    {
+     "lon": 6.0622,
+     "lat": 46.2051,
+     "speedMph": 183,
+     "source": "derived",
+     "date": "2016-01-07T20:41:27.000Z"
+    },
+    {
+     "lon": 6.0838,
+     "lat": 46.2212,
+     "speedMph": 175,
+     "source": "derived",
+     "date": "2016-01-07T20:42:27.000Z"
+    },
+    {
+     "lon": 6.0399,
+     "lat": 46.1905,
+     "speedMph": 206,
+     "altitudeFt": 4732,
+     "source": "derived",
+     "date": "2016-01-07T20:43:27.000Z"
+    },
+    {
+     "lon": 6.1058,
+     "lat": 46.2296,
+     "speedMph": 168,
+     "altitudeFt": 1411,
+     "source": "derived",
+     "date": "2016-01-07T20:45:00.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652873247,
+   "callsign": "EZY8485",
+   "tailNumber": "GEZTG",
+   "heading": 49.307663957985106,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.2627,
+     "lat": 46.3358,
+     "speedMph": 273,
+     "altitudeFt": 1411,
+     "source": "derived",
+     "date": "2016-01-07T20:41:15.000Z"
+    },
+    {
+     "lon": 6.1452,
+     "lat": 46.2661,
+     "speedMph": 67,
+     "source": "derived",
+     "date": "2016-01-07T20:42:15.000Z"
+    },
+    {
+     "lon": 6.0769,
+     "lat": 46.216,
+     "speedMph": 163,
+     "source": "derived",
+     "date": "2016-01-07T20:43:15.000Z"
+    },
+    {
+     "lon": 6.0903,
+     "lat": 46.2254,
+     "speedMph": 174,
+     "altitudeFt": 1578,
+     "source": "derived",
+     "date": "2016-01-07T20:44:15.000Z"
+    },
+    {
+     "lon": 6.1058,
+     "lat": 46.2296,
+     "speedMph": 168,
+     "altitudeFt": 1411,
+     "source": "derived",
+     "date": "2016-01-07T20:45:00.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652887873,
+   "callsign": "CFE2287",
+   "heading": 324.96400775166626,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.7382,
+     "lat": 46.5923,
+     "speedMph": 279,
+     "altitudeFt": 9573,
+     "source": "derived",
+     "date": "2016-01-07T20:32:07.000Z"
+    },
+    {
+     "lon": 5.7928,
+     "lat": 46.5388,
+     "speedMph": 263,
+     "altitudeFt": 8655,
+     "source": "derived",
+     "date": "2016-01-07T20:33:07.000Z"
+    },
+    {
+     "lon": 5.844,
+     "lat": 46.4885,
+     "speedMph": 246,
+     "altitudeFt": 7733,
+     "source": "derived",
+     "date": "2016-01-07T20:34:07.000Z"
+    },
+    {
+     "lon": 5.8918,
+     "lat": 46.4414,
+     "speedMph": 230,
+     "altitudeFt": 6814,
+     "source": "derived",
+     "date": "2016-01-07T20:35:07.000Z"
+    },
+    {
+     "lon": 5.9363,
+     "lat": 46.3976,
+     "speedMph": 214,
+     "altitudeFt": 5892,
+     "source": "derived",
+     "date": "2016-01-07T20:36:07.000Z"
+    },
+    {
+     "lon": 5.9775,
+     "lat": 46.3569,
+     "speedMph": 198,
+     "altitudeFt": 4974,
+     "source": "derived",
+     "date": "2016-01-07T20:37:07.000Z"
+    },
+    {
+     "lon": 6.0154,
+     "lat": 46.3194,
+     "speedMph": 181,
+     "altitudeFt": 4052,
+     "source": "derived",
+     "date": "2016-01-07T20:38:07.000Z"
+    },
+    {
+     "lon": 6.0499,
+     "lat": 46.2851,
+     "speedMph": 165,
+     "altitudeFt": 3133,
+     "source": "derived",
+     "date": "2016-01-07T20:39:07.000Z"
+    },
+    {
+     "lon": 6.0812,
+     "lat": 46.2541,
+     "speedMph": 149,
+     "altitudeFt": 2211,
+     "source": "derived",
+     "date": "2016-01-07T20:40:07.000Z"
+    },
+    {
+     "lon": 6.1058,
+     "lat": 46.2296,
+     "speedMph": 134,
+     "altitudeFt": 1411,
+     "source": "derived",
+     "date": "2016-01-07T20:41:00.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652850610,
+   "callsign": "BEL2725",
+   "tailNumber": "OOSNC",
+   "heading": 11.05394295980451,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.55,
+     "lat": 46.8609,
+     "speedMph": 400,
+     "altitudeFt": 12022,
+     "source": "derived",
+     "date": "2016-01-07T20:34:31.000Z"
+    },
+    {
+     "lon": 6.5256,
+     "lat": 46.7755,
+     "speedMph": 349,
+     "altitudeFt": 10768,
+     "source": "derived",
+     "date": "2016-01-07T20:35:31.000Z"
+    },
+    {
+     "lon": 6.5027,
+     "lat": 46.6883,
+     "speedMph": 333,
+     "altitudeFt": 8889,
+     "source": "derived",
+     "date": "2016-01-07T20:36:31.000Z"
+    },
+    {
+     "lon": 6.4824,
+     "lat": 46.6066,
+     "speedMph": 323,
+     "altitudeFt": 8244,
+     "source": "derived",
+     "date": "2016-01-07T20:37:31.000Z"
+    },
+    {
+     "lon": 6.4615,
+     "lat": 46.534,
+     "speedMph": 300,
+     "altitudeFt": 7399,
+     "source": "derived",
+     "date": "2016-01-07T20:38:31.000Z"
+    },
+    {
+     "lon": 6.436,
+     "lat": 46.4727,
+     "speedMph": 263,
+     "altitudeFt": 6551,
+     "source": "derived",
+     "date": "2016-01-07T20:39:31.000Z"
+    },
+    {
+     "lon": 6.3978,
+     "lat": 46.4326,
+     "speedMph": 193,
+     "altitudeFt": 5940,
+     "source": "derived",
+     "date": "2016-01-07T20:40:31.000Z"
+    },
+    {
+     "lon": 6.3545,
+     "lat": 46.3995,
+     "speedMph": 166,
+     "altitudeFt": 5522,
+     "source": "derived",
+     "date": "2016-01-07T20:41:31.000Z"
+    },
+    {
+     "lon": 6.3093,
+     "lat": 46.3703,
+     "speedMph": 163,
+     "altitudeFt": 5054,
+     "source": "derived",
+     "date": "2016-01-07T20:42:31.000Z"
+    },
+    {
+     "lon": 6.2631,
+     "lat": 46.3413,
+     "speedMph": 169,
+     "altitudeFt": 4230,
+     "source": "derived",
+     "date": "2016-01-07T20:43:31.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652888954,
+   "callsign": "EZY5261",
+   "tailNumber": "GEZEB",
+   "heading": 301.98743203653834,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.8355,
+     "lat": 46.5591,
+     "speedMph": 604,
+     "altitudeFt": 38998,
+     "source": "derived",
+     "date": "2016-01-07T20:34:44.000Z"
+    },
+    {
+     "lon": 5.0205,
+     "lat": 46.4798,
+     "speedMph": 604,
+     "altitudeFt": 38993,
+     "source": "derived",
+     "date": "2016-01-07T20:35:44.000Z"
+    },
+    {
+     "lon": 5.1666,
+     "lat": 46.4079,
+     "speedMph": 563,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:44.000Z"
+    },
+    {
+     "lon": 5.3396,
+     "lat": 46.3172,
+     "speedMph": 573,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:45.000Z"
+    },
+    {
+     "lon": 5.5126,
+     "lat": 46.226,
+     "speedMph": 595,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:45.000Z"
+    },
+    {
+     "lon": 5.6814,
+     "lat": 46.1333,
+     "speedMph": 604,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:45.000Z"
+    },
+    {
+     "lon": 5.8481,
+     "lat": 46.0435,
+     "speedMph": 604,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:45.000Z"
+    },
+    {
+     "lon": 6.0157,
+     "lat": 45.9546,
+     "speedMph": 604,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:45.000Z"
+    },
+    {
+     "lon": 6.1785,
+     "lat": 45.8667,
+     "speedMph": 604,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:45.000Z"
+    },
+    {
+     "lon": 6.3298,
+     "lat": 45.7844,
+     "speedMph": 548,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:45.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652869240,
+   "callsign": "VLG6255",
+   "tailNumber": "ECLVC",
+   "heading": 135.17070734719974,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 7.6494,
+     "lat": 45.547,
+     "speedMph": 418,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:35.000Z"
+    },
+    {
+     "lon": 7.5484,
+     "lat": 45.6182,
+     "speedMph": 406,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:35.000Z"
+    },
+    {
+     "lon": 7.4493,
+     "lat": 45.6879,
+     "speedMph": 410,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:35.000Z"
+    },
+    {
+     "lon": 7.3475,
+     "lat": 45.7591,
+     "speedMph": 413,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:35.000Z"
+    },
+    {
+     "lon": 7.2462,
+     "lat": 45.83,
+     "speedMph": 413,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:35.000Z"
+    },
+    {
+     "lon": 7.1409,
+     "lat": 45.9034,
+     "speedMph": 423,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:35.000Z"
+    },
+    {
+     "lon": 7.0381,
+     "lat": 45.9746,
+     "speedMph": 425,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:35.000Z"
+    },
+    {
+     "lon": 6.9321,
+     "lat": 46.0481,
+     "speedMph": 434,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:35.000Z"
+    },
+    {
+     "lon": 6.8243,
+     "lat": 46.1223,
+     "speedMph": 439,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:35.000Z"
+    },
+    {
+     "lon": 6.7193,
+     "lat": 46.1942,
+     "speedMph": 429,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:35.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652898694,
+   "callsign": "EZY2791",
+   "tailNumber": "GEZOP",
+   "heading": 126.01352146179731,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.921,
+     "lat": 46.228,
+     "speedMph": 366,
+     "altitudeFt": 32024,
+     "source": "derived",
+     "date": "2016-01-07T20:35:02.000Z"
+    },
+    {
+     "lon": 6.8157,
+     "lat": 46.281,
+     "speedMph": 373,
+     "altitudeFt": 32008,
+     "source": "derived",
+     "date": "2016-01-07T20:36:02.000Z"
+    },
+    {
+     "lon": 6.7094,
+     "lat": 46.3341,
+     "speedMph": 376,
+     "altitudeFt": 32004,
+     "source": "derived",
+     "date": "2016-01-07T20:37:02.000Z"
+    },
+    {
+     "lon": 6.6037,
+     "lat": 46.3865,
+     "speedMph": 372,
+     "altitudeFt": 31999,
+     "source": "derived",
+     "date": "2016-01-07T20:38:02.000Z"
+    },
+    {
+     "lon": 6.4968,
+     "lat": 46.4395,
+     "speedMph": 374,
+     "altitudeFt": 31994,
+     "source": "derived",
+     "date": "2016-01-07T20:39:02.000Z"
+    },
+    {
+     "lon": 6.388,
+     "lat": 46.4932,
+     "speedMph": 381,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:02.000Z"
+    },
+    {
+     "lon": 6.28,
+     "lat": 46.5466,
+     "speedMph": 381,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:02.000Z"
+    },
+    {
+     "lon": 6.1771,
+     "lat": 46.5975,
+     "speedMph": 371,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:02.000Z"
+    },
+    {
+     "lon": 6.0697,
+     "lat": 46.6594,
+     "speedMph": 386,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:02.000Z"
+    },
+    {
+     "lon": 5.974,
+     "lat": 46.7257,
+     "speedMph": 390,
+     "altitudeFt": 32000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:02.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652921996,
+   "callsign": "BZH3557",
+   "heading": 221.2237697497328,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.0541,
+     "lat": 45.8862,
+     "speedMph": 747,
+     "altitudeFt": 32844,
+     "source": "derived",
+     "date": "2016-01-07T20:34:33.000Z"
+    },
+    {
+     "lon": 4.2255,
+     "lat": 46.0225,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:35:33.000Z"
+    },
+    {
+     "lon": 4.3977,
+     "lat": 46.1586,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:36:33.000Z"
+    },
+    {
+     "lon": 4.5708,
+     "lat": 46.2943,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:37:33.000Z"
+    },
+    {
+     "lon": 4.7447,
+     "lat": 46.4299,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:38:33.000Z"
+    },
+    {
+     "lon": 4.92,
+     "lat": 46.5655,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:39:33.000Z"
+    },
+    {
+     "lon": 5.0957,
+     "lat": 46.7005,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:40:33.000Z"
+    },
+    {
+     "lon": 5.2722,
+     "lat": 46.8352,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:41:33.000Z"
+    },
+    {
+     "lon": 5.4497,
+     "lat": 46.9697,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:42:33.000Z"
+    },
+    {
+     "lon": 5.628,
+     "lat": 47.1038,
+     "speedMph": 750,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:43:33.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652869067,
+   "callsign": "AZA332",
+   "tailNumber": "EIDSY",
+   "heading": 134.6889933574101,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.7997,
+     "lat": 46.098,
+     "speedMph": 398,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:22.000Z"
+    },
+    {
+     "lon": 6.7082,
+     "lat": 46.1608,
+     "speedMph": 392,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:22.000Z"
+    },
+    {
+     "lon": 6.6213,
+     "lat": 46.2196,
+     "speedMph": 367,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:22.000Z"
+    },
+    {
+     "lon": 6.5307,
+     "lat": 46.2808,
+     "speedMph": 355,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:22.000Z"
+    },
+    {
+     "lon": 6.4404,
+     "lat": 46.3417,
+     "speedMph": 361,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:22.000Z"
+    },
+    {
+     "lon": 6.3558,
+     "lat": 46.3985,
+     "speedMph": 346,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:22.000Z"
+    },
+    {
+     "lon": 6.2635,
+     "lat": 46.4604,
+     "speedMph": 356,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:22.000Z"
+    },
+    {
+     "lon": 6.1688,
+     "lat": 46.5238,
+     "speedMph": 370,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:22.000Z"
+    },
+    {
+     "lon": 6.074,
+     "lat": 46.5871,
+     "speedMph": 376,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:22.000Z"
+    },
+    {
+     "lon": 5.9947,
+     "lat": 46.6395,
+     "speedMph": 347,
+     "altitudeFt": 34000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:22.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652889448,
+   "callsign": "SWR357",
+   "tailNumber": "HBIJP",
+   "heading": 297.21793365073245,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 4.9022,
+     "lat": 46.7977,
+     "speedMph": 604,
+     "altitudeFt": 26118,
+     "source": "derived",
+     "date": "2016-01-07T20:35:21.000Z"
+    },
+    {
+     "lon": 5.0801,
+     "lat": 46.7352,
+     "speedMph": 589,
+     "altitudeFt": 24084,
+     "source": "derived",
+     "date": "2016-01-07T20:36:21.000Z"
+    },
+    {
+     "lon": 5.2481,
+     "lat": 46.6992,
+     "speedMph": 504,
+     "altitudeFt": 21250,
+     "source": "derived",
+     "date": "2016-01-07T20:37:21.000Z"
+    },
+    {
+     "lon": 5.4178,
+     "lat": 46.6599,
+     "speedMph": 493,
+     "altitudeFt": 19646,
+     "source": "derived",
+     "date": "2016-01-07T20:38:21.000Z"
+    },
+    {
+     "lon": 5.5859,
+     "lat": 46.6224,
+     "speedMph": 495,
+     "altitudeFt": 18040,
+     "source": "derived",
+     "date": "2016-01-07T20:39:21.000Z"
+    },
+    {
+     "lon": 5.7374,
+     "lat": 46.5804,
+     "speedMph": 462,
+     "altitudeFt": 16430,
+     "source": "derived",
+     "date": "2016-01-07T20:40:21.000Z"
+    },
+    {
+     "lon": 5.8657,
+     "lat": 46.5254,
+     "speedMph": 425,
+     "altitudeFt": 14873,
+     "source": "derived",
+     "date": "2016-01-07T20:41:21.000Z"
+    },
+    {
+     "lon": 5.9925,
+     "lat": 46.4821,
+     "speedMph": 394,
+     "altitudeFt": 13310,
+     "source": "derived",
+     "date": "2016-01-07T20:42:21.000Z"
+    },
+    {
+     "lon": 6.1185,
+     "lat": 46.4535,
+     "speedMph": 357,
+     "altitudeFt": 11789,
+     "source": "derived",
+     "date": "2016-01-07T20:43:21.000Z"
+    },
+    {
+     "lon": 6.238,
+     "lat": 46.4734,
+     "speedMph": 316,
+     "altitudeFt": 10684,
+     "source": "derived",
+     "date": "2016-01-07T20:44:21.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853457,
+   "callsign": "RAE1416",
+   "heading": 316.4936455097996,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.2057,
+     "lat": 47.2127,
+     "speedMph": 470,
+     "altitudeFt": 28822,
+     "source": "derived",
+     "date": "2016-01-07T20:34:55.000Z"
+    },
+    {
+     "lon": 5.3219,
+     "lat": 47.1296,
+     "speedMph": 480,
+     "altitudeFt": 29875,
+     "source": "derived",
+     "date": "2016-01-07T20:35:55.000Z"
+    },
+    {
+     "lon": 5.4402,
+     "lat": 47.0444,
+     "speedMph": 491,
+     "altitudeFt": 30928,
+     "source": "derived",
+     "date": "2016-01-07T20:36:55.000Z"
+    },
+    {
+     "lon": 5.5607,
+     "lat": 46.9574,
+     "speedMph": 501,
+     "altitudeFt": 31982,
+     "source": "derived",
+     "date": "2016-01-07T20:37:55.000Z"
+    },
+    {
+     "lon": 5.6838,
+     "lat": 46.868,
+     "speedMph": 511,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:38:55.000Z"
+    },
+    {
+     "lon": 5.8072,
+     "lat": 46.778,
+     "speedMph": 511,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:39:55.000Z"
+    },
+    {
+     "lon": 5.9301,
+     "lat": 46.6879,
+     "speedMph": 511,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:40:55.000Z"
+    },
+    {
+     "lon": 6.0526,
+     "lat": 46.5977,
+     "speedMph": 511,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:41:55.000Z"
+    },
+    {
+     "lon": 6.1747,
+     "lat": 46.5074,
+     "speedMph": 511,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:42:55.000Z"
+    },
+    {
+     "lon": 6.2964,
+     "lat": 46.4169,
+     "speedMph": 511,
+     "altitudeFt": 32999,
+     "source": "derived",
+     "date": "2016-01-07T20:43:55.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652889453,
+   "callsign": "BAW738",
+   "tailNumber": "GEUPO",
+   "heading": 281.21696053200463,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.3086,
+     "lat": 46.6528,
+     "speedMph": 564,
+     "altitudeFt": 20117,
+     "source": "derived",
+     "date": "2016-01-07T20:34:44.000Z"
+    },
+    {
+     "lon": 5.4874,
+     "lat": 46.6286,
+     "speedMph": 518,
+     "altitudeFt": 17182,
+     "source": "derived",
+     "date": "2016-01-07T20:35:44.000Z"
+    },
+    {
+     "lon": 5.6507,
+     "lat": 46.6064,
+     "speedMph": 464,
+     "altitudeFt": 13995,
+     "source": "derived",
+     "date": "2016-01-07T20:36:44.000Z"
+    },
+    {
+     "lon": 5.801,
+     "lat": 46.5828,
+     "speedMph": 425,
+     "altitudeFt": 11170,
+     "source": "derived",
+     "date": "2016-01-07T20:37:44.000Z"
+    },
+    {
+     "lon": 5.9393,
+     "lat": 46.5589,
+     "speedMph": 385,
+     "altitudeFt": 9716,
+     "source": "derived",
+     "date": "2016-01-07T20:38:44.000Z"
+    },
+    {
+     "lon": 6.0653,
+     "lat": 46.5382,
+     "speedMph": 355,
+     "altitudeFt": 8500,
+     "source": "derived",
+     "date": "2016-01-07T20:39:44.000Z"
+    },
+    {
+     "lon": 6.1806,
+     "lat": 46.5179,
+     "speedMph": 318,
+     "altitudeFt": 7239,
+     "source": "derived",
+     "date": "2016-01-07T20:40:44.000Z"
+    },
+    {
+     "lon": 6.2821,
+     "lat": 46.5024,
+     "speedMph": 277,
+     "altitudeFt": 6960,
+     "source": "derived",
+     "date": "2016-01-07T20:41:44.000Z"
+    },
+    {
+     "lon": 6.3596,
+     "lat": 46.4808,
+     "speedMph": 227,
+     "altitudeFt": 6783,
+     "source": "derived",
+     "date": "2016-01-07T20:42:44.000Z"
+    },
+    {
+     "lon": 6.3838,
+     "lat": 46.4462,
+     "speedMph": 146,
+     "altitudeFt": 6348,
+     "source": "derived",
+     "date": "2016-01-07T20:43:44.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652892211,
+   "callsign": "IBE3482",
+   "tailNumber": "ECJFN",
+   "heading": 223.239736063642,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.8831,
+     "lat": 45.9435,
+     "speedMph": 401,
+     "altitudeFt": 15664,
+     "source": "derived",
+     "date": "2016-01-07T20:35:20.000Z"
+    },
+    {
+     "lon": 5.9769,
+     "lat": 46.0129,
+     "speedMph": 391,
+     "altitudeFt": 14358,
+     "source": "derived",
+     "date": "2016-01-07T20:36:20.000Z"
+    },
+    {
+     "lon": 6.0716,
+     "lat": 46.0767,
+     "speedMph": 380,
+     "altitudeFt": 13075,
+     "source": "derived",
+     "date": "2016-01-07T20:37:20.000Z"
+    },
+    {
+     "lon": 6.1626,
+     "lat": 46.1346,
+     "speedMph": 357,
+     "altitudeFt": 11647,
+     "source": "derived",
+     "date": "2016-01-07T20:38:20.000Z"
+    },
+    {
+     "lon": 6.2433,
+     "lat": 46.1904,
+     "speedMph": 317,
+     "altitudeFt": 10264,
+     "source": "derived",
+     "date": "2016-01-07T20:39:20.000Z"
+    },
+    {
+     "lon": 6.3216,
+     "lat": 46.2431,
+     "speedMph": 298,
+     "altitudeFt": 9412,
+     "source": "derived",
+     "date": "2016-01-07T20:40:20.000Z"
+    },
+    {
+     "lon": 6.3978,
+     "lat": 46.2949,
+     "speedMph": 293,
+     "altitudeFt": 8657,
+     "source": "derived",
+     "date": "2016-01-07T20:41:20.000Z"
+    },
+    {
+     "lon": 6.473,
+     "lat": 46.345,
+     "speedMph": 287,
+     "altitudeFt": 7897,
+     "source": "derived",
+     "date": "2016-01-07T20:42:20.000Z"
+    },
+    {
+     "lon": 6.5254,
+     "lat": 46.3958,
+     "speedMph": 257,
+     "altitudeFt": 7340,
+     "source": "derived",
+     "date": "2016-01-07T20:43:20.000Z"
+    },
+    {
+     "lon": 6.522,
+     "lat": 46.4322,
+     "speedMph": 164,
+     "altitudeFt": 6848,
+     "source": "derived",
+     "date": "2016-01-07T20:44:20.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652931929,
+   "callsign": "SWR2816",
+   "tailNumber": "HBIJJ",
+   "heading": 54.42298677598736,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 7.8222,
+     "lat": 47.2337,
+     "speedMph": 410,
+     "altitudeFt": 15945,
+     "source": "derived",
+     "date": "2016-01-07T20:35:13.000Z"
+    },
+    {
+     "lon": 7.7138,
+     "lat": 47.1811,
+     "speedMph": 391,
+     "altitudeFt": 16133,
+     "source": "derived",
+     "date": "2016-01-07T20:36:13.000Z"
+    },
+    {
+     "lon": 7.6056,
+     "lat": 47.1257,
+     "speedMph": 378,
+     "altitudeFt": 15479,
+     "source": "derived",
+     "date": "2016-01-07T20:37:13.000Z"
+    },
+    {
+     "lon": 7.5,
+     "lat": 47.0693,
+     "speedMph": 379,
+     "altitudeFt": 15159,
+     "source": "derived",
+     "date": "2016-01-07T20:38:13.000Z"
+    },
+    {
+     "lon": 7.3943,
+     "lat": 47.0115,
+     "speedMph": 382,
+     "altitudeFt": 15014,
+     "source": "derived",
+     "date": "2016-01-07T20:39:13.000Z"
+    },
+    {
+     "lon": 7.289,
+     "lat": 46.9533,
+     "speedMph": 386,
+     "altitudeFt": 14954,
+     "source": "derived",
+     "date": "2016-01-07T20:40:13.000Z"
+    },
+    {
+     "lon": 7.1853,
+     "lat": 46.8955,
+     "speedMph": 383,
+     "altitudeFt": 14751,
+     "source": "derived",
+     "date": "2016-01-07T20:41:13.000Z"
+    },
+    {
+     "lon": 7.0876,
+     "lat": 46.8417,
+     "speedMph": 366,
+     "altitudeFt": 14031,
+     "source": "derived",
+     "date": "2016-01-07T20:42:13.000Z"
+    },
+    {
+     "lon": 6.9926,
+     "lat": 46.7895,
+     "speedMph": 345,
+     "altitudeFt": 12965,
+     "source": "derived",
+     "date": "2016-01-07T20:43:13.000Z"
+    },
+    {
+     "lon": 6.8978,
+     "lat": 46.7373,
+     "speedMph": 338,
+     "altitudeFt": 11902,
+     "source": "derived",
+     "date": "2016-01-07T20:44:13.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652842332,
+   "callsign": "KLM1559",
+   "heading": 357.3063053324387,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.6058,
+     "lat": 47.9686,
+     "speedMph": 513,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:42.000Z"
+    },
+    {
+     "lon": 6.6149,
+     "lat": 47.8391,
+     "speedMph": 526,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:42.000Z"
+    },
+    {
+     "lon": 6.6228,
+     "lat": 47.7106,
+     "speedMph": 529,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:42.000Z"
+    },
+    {
+     "lon": 6.6299,
+     "lat": 47.5836,
+     "speedMph": 529,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:42.000Z"
+    },
+    {
+     "lon": 6.6364,
+     "lat": 47.461,
+     "speedMph": 517,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:42.000Z"
+    },
+    {
+     "lon": 6.6426,
+     "lat": 47.3386,
+     "speedMph": 508,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:42.000Z"
+    },
+    {
+     "lon": 6.6494,
+     "lat": 47.2082,
+     "speedMph": 524,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:42.000Z"
+    },
+    {
+     "lon": 6.6567,
+     "lat": 47.0788,
+     "speedMph": 530,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:42.000Z"
+    },
+    {
+     "lon": 6.6672,
+     "lat": 46.9541,
+     "speedMph": 531,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:42.000Z"
+    },
+    {
+     "lon": 6.6878,
+     "lat": 46.8235,
+     "speedMph": 542,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:42.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652869909,
+   "callsign": "RYR4599",
+   "tailNumber": "EIDWG",
+   "heading": 65.06241246878383,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.2265,
+     "lat": 47.3954,
+     "speedMph": 437,
+     "altitudeFt": 36447,
+     "source": "derived",
+     "date": "2016-01-07T20:34:28.000Z"
+    },
+    {
+     "lon": 8.0807,
+     "lat": 47.3496,
+     "speedMph": 447,
+     "altitudeFt": 36896,
+     "source": "derived",
+     "date": "2016-01-07T20:35:28.000Z"
+    },
+    {
+     "lon": 7.953,
+     "lat": 47.3093,
+     "speedMph": 416,
+     "altitudeFt": 37545,
+     "source": "derived",
+     "date": "2016-01-07T20:36:28.000Z"
+    },
+    {
+     "lon": 7.8035,
+     "lat": 47.2614,
+     "speedMph": 440,
+     "altitudeFt": 37429,
+     "source": "derived",
+     "date": "2016-01-07T20:37:28.000Z"
+    },
+    {
+     "lon": 7.6732,
+     "lat": 47.2117,
+     "speedMph": 434,
+     "altitudeFt": 37253,
+     "source": "derived",
+     "date": "2016-01-07T20:38:28.000Z"
+    },
+    {
+     "lon": 7.5337,
+     "lat": 47.1504,
+     "speedMph": 454,
+     "altitudeFt": 37150,
+     "source": "derived",
+     "date": "2016-01-07T20:39:28.000Z"
+    },
+    {
+     "lon": 7.4002,
+     "lat": 47.0881,
+     "speedMph": 470,
+     "altitudeFt": 37115,
+     "source": "derived",
+     "date": "2016-01-07T20:40:28.000Z"
+    },
+    {
+     "lon": 7.2704,
+     "lat": 47.0247,
+     "speedMph": 470,
+     "altitudeFt": 37051,
+     "source": "derived",
+     "date": "2016-01-07T20:41:28.000Z"
+    },
+    {
+     "lon": 7.1394,
+     "lat": 46.9606,
+     "speedMph": 471,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:28.000Z"
+    },
+    {
+     "lon": 7.0211,
+     "lat": 46.9045,
+     "speedMph": 431,
+     "altitudeFt": 37000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:28.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652898684,
+   "callsign": "BEL3160",
+   "tailNumber": "OOSSB",
+   "heading": 161.35689043112245,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.843,
+     "lat": 46.7633,
+     "speedMph": 425,
+     "altitudeFt": 38311,
+     "source": "derived",
+     "date": "2016-01-07T20:35:20.000Z"
+    },
+    {
+     "lon": 6.7908,
+     "lat": 46.8693,
+     "speedMph": 443,
+     "altitudeFt": 38245,
+     "source": "derived",
+     "date": "2016-01-07T20:36:20.000Z"
+    },
+    {
+     "lon": 6.7607,
+     "lat": 46.9849,
+     "speedMph": 483,
+     "altitudeFt": 38196,
+     "source": "derived",
+     "date": "2016-01-07T20:37:20.000Z"
+    },
+    {
+     "lon": 6.7441,
+     "lat": 47.0977,
+     "speedMph": 508,
+     "altitudeFt": 38010,
+     "source": "derived",
+     "date": "2016-01-07T20:38:20.000Z"
+    },
+    {
+     "lon": 6.7231,
+     "lat": 47.2139,
+     "speedMph": 518,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:20.000Z"
+    },
+    {
+     "lon": 6.7001,
+     "lat": 47.3239,
+     "speedMph": 489,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:20.000Z"
+    },
+    {
+     "lon": 6.6748,
+     "lat": 47.4382,
+     "speedMph": 474,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:20.000Z"
+    },
+    {
+     "lon": 6.648,
+     "lat": 47.5559,
+     "speedMph": 489,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:20.000Z"
+    },
+    {
+     "lon": 6.6229,
+     "lat": 47.6729,
+     "speedMph": 498,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:20.000Z"
+    },
+    {
+     "lon": 6.5992,
+     "lat": 47.7828,
+     "speedMph": 476,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:20.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652907508,
+   "callsign": "BER7633",
+   "tailNumber": "OEIDF",
+   "heading": 207.62471583275175,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.719,
+     "lat": 45.0343,
+     "speedMph": 534,
+     "altitudeFt": 36009,
+     "source": "derived",
+     "date": "2016-01-07T20:34:28.000Z"
+    },
+    {
+     "lon": 6.8034,
+     "lat": 45.1483,
+     "speedMph": 552,
+     "altitudeFt": 36014,
+     "source": "derived",
+     "date": "2016-01-07T20:35:28.000Z"
+    },
+    {
+     "lon": 6.89,
+     "lat": 45.2618,
+     "speedMph": 545,
+     "altitudeFt": 36044,
+     "source": "derived",
+     "date": "2016-01-07T20:36:28.000Z"
+    },
+    {
+     "lon": 6.9767,
+     "lat": 45.3767,
+     "speedMph": 540,
+     "altitudeFt": 36073,
+     "source": "derived",
+     "date": "2016-01-07T20:37:28.000Z"
+    },
+    {
+     "lon": 7.064,
+     "lat": 45.491,
+     "speedMph": 542,
+     "altitudeFt": 36085,
+     "source": "derived",
+     "date": "2016-01-07T20:38:28.000Z"
+    },
+    {
+     "lon": 7.1521,
+     "lat": 45.6091,
+     "speedMph": 551,
+     "altitudeFt": 36105,
+     "source": "derived",
+     "date": "2016-01-07T20:39:28.000Z"
+    },
+    {
+     "lon": 7.2382,
+     "lat": 45.7233,
+     "speedMph": 543,
+     "altitudeFt": 36113,
+     "source": "derived",
+     "date": "2016-01-07T20:40:28.000Z"
+    },
+    {
+     "lon": 7.3246,
+     "lat": 45.8372,
+     "speedMph": 536,
+     "altitudeFt": 36071,
+     "source": "derived",
+     "date": "2016-01-07T20:41:28.000Z"
+    },
+    {
+     "lon": 7.4099,
+     "lat": 45.9493,
+     "speedMph": 526,
+     "altitudeFt": 36057,
+     "source": "derived",
+     "date": "2016-01-07T20:42:28.000Z"
+    },
+    {
+     "lon": 7.4922,
+     "lat": 46.0567,
+     "speedMph": 506,
+     "altitudeFt": 36043,
+     "source": "derived",
+     "date": "2016-01-07T20:43:28.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652870494,
+   "callsign": "DLH1172",
+   "tailNumber": "DAISO",
+   "heading": 22.925341371053058,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.1536,
+     "lat": 48.3043,
+     "speedMph": 491,
+     "altitudeFt": 31880,
+     "source": "derived",
+     "date": "2016-01-07T20:34:38.000Z"
+    },
+    {
+     "lon": 8.0832,
+     "lat": 48.1936,
+     "speedMph": 494,
+     "altitudeFt": 32739,
+     "source": "derived",
+     "date": "2016-01-07T20:35:38.000Z"
+    },
+    {
+     "lon": 8.0051,
+     "lat": 48.0965,
+     "speedMph": 478,
+     "altitudeFt": 33079,
+     "source": "derived",
+     "date": "2016-01-07T20:36:38.000Z"
+    },
+    {
+     "lon": 7.9198,
+     "lat": 47.9958,
+     "speedMph": 477,
+     "altitudeFt": 33679,
+     "source": "derived",
+     "date": "2016-01-07T20:37:38.000Z"
+    },
+    {
+     "lon": 7.8271,
+     "lat": 47.8849,
+     "speedMph": 502,
+     "altitudeFt": 33432,
+     "source": "derived",
+     "date": "2016-01-07T20:38:38.000Z"
+    },
+    {
+     "lon": 7.7412,
+     "lat": 47.7805,
+     "speedMph": 503,
+     "altitudeFt": 33287,
+     "source": "derived",
+     "date": "2016-01-07T20:39:38.000Z"
+    },
+    {
+     "lon": 7.6591,
+     "lat": 47.6755,
+     "speedMph": 500,
+     "altitudeFt": 33130,
+     "source": "derived",
+     "date": "2016-01-07T20:40:38.000Z"
+    },
+    {
+     "lon": 7.575,
+     "lat": 47.5701,
+     "speedMph": 495,
+     "altitudeFt": 33027,
+     "source": "derived",
+     "date": "2016-01-07T20:41:38.000Z"
+    },
+    {
+     "lon": 7.4919,
+     "lat": 47.4649,
+     "speedMph": 496,
+     "altitudeFt": 33027,
+     "source": "derived",
+     "date": "2016-01-07T20:42:38.000Z"
+    },
+    {
+     "lon": 7.4031,
+     "lat": 47.3743,
+     "speedMph": 456,
+     "altitudeFt": 33014,
+     "source": "derived",
+     "date": "2016-01-07T20:43:38.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652889018,
+   "callsign": "EZY5287",
+   "tailNumber": "GEZAI",
+   "heading": 282.6112122060031,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.2854,
+     "lat": 48.1038,
+     "speedMph": 561,
+     "altitudeFt": 36871,
+     "source": "derived",
+     "date": "2016-01-07T20:35:20.000Z"
+    },
+    {
+     "lon": 6.5206,
+     "lat": 48.0689,
+     "speedMph": 593,
+     "altitudeFt": 36253,
+     "source": "derived",
+     "date": "2016-01-07T20:36:20.000Z"
+    },
+    {
+     "lon": 6.7488,
+     "lat": 48.0311,
+     "speedMph": 604,
+     "altitudeFt": 35527,
+     "source": "derived",
+     "date": "2016-01-07T20:37:20.000Z"
+    },
+    {
+     "lon": 6.9436,
+     "lat": 47.9689,
+     "speedMph": 604,
+     "altitudeFt": 35051,
+     "source": "derived",
+     "date": "2016-01-07T20:38:20.000Z"
+    },
+    {
+     "lon": 7.0992,
+     "lat": 47.8922,
+     "speedMph": 555,
+     "altitudeFt": 34822,
+     "source": "derived",
+     "date": "2016-01-07T20:39:20.000Z"
+    },
+    {
+     "lon": 7.2559,
+     "lat": 47.7585,
+     "speedMph": 604,
+     "altitudeFt": 34749,
+     "source": "derived",
+     "date": "2016-01-07T20:40:20.000Z"
+    },
+    {
+     "lon": 7.3946,
+     "lat": 47.6325,
+     "speedMph": 604,
+     "altitudeFt": 34766,
+     "source": "derived",
+     "date": "2016-01-07T20:41:20.000Z"
+    },
+    {
+     "lon": 7.5125,
+     "lat": 47.4909,
+     "speedMph": 604,
+     "altitudeFt": 34799,
+     "source": "derived",
+     "date": "2016-01-07T20:42:20.000Z"
+    },
+    {
+     "lon": 7.6267,
+     "lat": 47.3739,
+     "speedMph": 604,
+     "altitudeFt": 34967,
+     "source": "derived",
+     "date": "2016-01-07T20:43:20.000Z"
+    },
+    {
+     "lon": 7.7336,
+     "lat": 47.2388,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:44:20.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853353,
+   "callsign": "RAE1092",
+   "heading": 294.27123142752004,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.5288,
+     "lat": 47.9071,
+     "speedMph": 465,
+     "altitudeFt": 25046,
+     "source": "derived",
+     "date": "2016-01-07T20:34:28.000Z"
+    },
+    {
+     "lon": 6.677,
+     "lat": 47.8624,
+     "speedMph": 434,
+     "altitudeFt": 22428,
+     "source": "derived",
+     "date": "2016-01-07T20:35:28.000Z"
+    },
+    {
+     "lon": 6.8135,
+     "lat": 47.8211,
+     "speedMph": 399,
+     "altitudeFt": 19419,
+     "source": "derived",
+     "date": "2016-01-07T20:36:28.000Z"
+    },
+    {
+     "lon": 6.9384,
+     "lat": 47.7831,
+     "speedMph": 363,
+     "altitudeFt": 16404,
+     "source": "derived",
+     "date": "2016-01-07T20:37:28.000Z"
+    },
+    {
+     "lon": 7.0512,
+     "lat": 47.7486,
+     "speedMph": 327,
+     "altitudeFt": 13392,
+     "source": "derived",
+     "date": "2016-01-07T20:38:28.000Z"
+    },
+    {
+     "lon": 7.1522,
+     "lat": 47.7176,
+     "speedMph": 292,
+     "altitudeFt": 10384,
+     "source": "derived",
+     "date": "2016-01-07T20:39:28.000Z"
+    },
+    {
+     "lon": 7.2406,
+     "lat": 47.6903,
+     "speedMph": 262,
+     "altitudeFt": 8527,
+     "source": "derived",
+     "date": "2016-01-07T20:40:28.000Z"
+    },
+    {
+     "lon": 7.3213,
+     "lat": 47.6653,
+     "speedMph": 234,
+     "altitudeFt": 6837,
+     "source": "derived",
+     "date": "2016-01-07T20:41:28.000Z"
+    },
+    {
+     "lon": 7.3929,
+     "lat": 47.6431,
+     "speedMph": 206,
+     "altitudeFt": 5151,
+     "source": "derived",
+     "date": "2016-01-07T20:42:28.000Z"
+    },
+    {
+     "lon": 7.4552,
+     "lat": 47.6237,
+     "speedMph": 178,
+     "altitudeFt": 3461,
+     "source": "derived",
+     "date": "2016-01-07T20:43:28.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853810,
+   "callsign": "SWR645",
+   "tailNumber": "HBIJF",
+   "heading": 294.38766080773235,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 5.9081,
+     "lat": 48.1256,
+     "speedMph": 604,
+     "altitudeFt": 28116,
+     "source": "derived",
+     "date": "2016-01-07T20:34:55.000Z"
+    },
+    {
+     "lon": 6.1199,
+     "lat": 48.0617,
+     "speedMph": 604,
+     "altitudeFt": 26951,
+     "source": "derived",
+     "date": "2016-01-07T20:35:55.000Z"
+    },
+    {
+     "lon": 6.3216,
+     "lat": 48.0002,
+     "speedMph": 600,
+     "altitudeFt": 25651,
+     "source": "derived",
+     "date": "2016-01-07T20:36:55.000Z"
+    },
+    {
+     "lon": 6.5119,
+     "lat": 47.9421,
+     "speedMph": 561,
+     "altitudeFt": 24020,
+     "source": "derived",
+     "date": "2016-01-07T20:37:55.000Z"
+    },
+    {
+     "lon": 6.6973,
+     "lat": 47.8853,
+     "speedMph": 548,
+     "altitudeFt": 22263,
+     "source": "derived",
+     "date": "2016-01-07T20:38:55.000Z"
+    },
+    {
+     "lon": 6.8789,
+     "lat": 47.8291,
+     "speedMph": 536,
+     "altitudeFt": 20561,
+     "source": "derived",
+     "date": "2016-01-07T20:39:55.000Z"
+    },
+    {
+     "lon": 7.0423,
+     "lat": 47.7779,
+     "speedMph": 501,
+     "altitudeFt": 19359,
+     "source": "derived",
+     "date": "2016-01-07T20:40:55.000Z"
+    },
+    {
+     "lon": 7.1985,
+     "lat": 47.7286,
+     "speedMph": 471,
+     "altitudeFt": 18837,
+     "source": "derived",
+     "date": "2016-01-07T20:41:55.000Z"
+    },
+    {
+     "lon": 7.3474,
+     "lat": 47.6818,
+     "speedMph": 445,
+     "altitudeFt": 18318,
+     "source": "derived",
+     "date": "2016-01-07T20:42:55.000Z"
+    },
+    {
+     "lon": 7.4903,
+     "lat": 47.6367,
+     "speedMph": 421,
+     "altitudeFt": 17667,
+     "source": "derived",
+     "date": "2016-01-07T20:43:55.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652843266,
+   "callsign": "EZY5088",
+   "tailNumber": "GEZUG",
+   "heading": 115.98663556709892,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.927,
+     "lat": 46.8543,
+     "speedMph": 418,
+     "altitudeFt": 35405,
+     "source": "derived",
+     "date": "2016-01-07T20:34:33.000Z"
+    },
+    {
+     "lon": 8.8042,
+     "lat": 46.8953,
+     "speedMph": 410,
+     "altitudeFt": 36416,
+     "source": "derived",
+     "date": "2016-01-07T20:35:33.000Z"
+    },
+    {
+     "lon": 8.6673,
+     "lat": 46.9405,
+     "speedMph": 422,
+     "altitudeFt": 36302,
+     "source": "derived",
+     "date": "2016-01-07T20:36:33.000Z"
+    },
+    {
+     "lon": 8.5255,
+     "lat": 46.9872,
+     "speedMph": 443,
+     "altitudeFt": 36414,
+     "source": "derived",
+     "date": "2016-01-07T20:37:33.000Z"
+    },
+    {
+     "lon": 8.3778,
+     "lat": 47.0355,
+     "speedMph": 470,
+     "altitudeFt": 36605,
+     "source": "derived",
+     "date": "2016-01-07T20:38:33.000Z"
+    },
+    {
+     "lon": 8.2539,
+     "lat": 47.0759,
+     "speedMph": 433,
+     "altitudeFt": 36226,
+     "source": "derived",
+     "date": "2016-01-07T20:39:33.000Z"
+    },
+    {
+     "lon": 8.122,
+     "lat": 47.1185,
+     "speedMph": 417,
+     "altitudeFt": 36015,
+     "source": "derived",
+     "date": "2016-01-07T20:40:33.000Z"
+    },
+    {
+     "lon": 7.9929,
+     "lat": 47.1602,
+     "speedMph": 395,
+     "altitudeFt": 35878,
+     "source": "derived",
+     "date": "2016-01-07T20:41:33.000Z"
+    },
+    {
+     "lon": 7.863,
+     "lat": 47.202,
+     "speedMph": 397,
+     "altitudeFt": 36001,
+     "source": "derived",
+     "date": "2016-01-07T20:42:33.000Z"
+    },
+    {
+     "lon": 7.7344,
+     "lat": 47.2505,
+     "speedMph": 404,
+     "altitudeFt": 35996,
+     "source": "derived",
+     "date": "2016-01-07T20:43:33.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652931866,
+   "callsign": "SWR646",
+   "tailNumber": "HBIXS",
+   "heading": 88.27598396127604,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.4994,
+     "lat": 47.5154,
+     "speedMph": 122,
+     "altitudeFt": 4706,
+     "source": "derived",
+     "date": "2016-01-07T20:35:15.000Z"
+    },
+    {
+     "lon": 8.4547,
+     "lat": 47.5145,
+     "speedMph": 168,
+     "altitudeFt": 5808,
+     "source": "derived",
+     "date": "2016-01-07T20:36:15.000Z"
+    },
+    {
+     "lon": 8.3937,
+     "lat": 47.4865,
+     "speedMph": 254,
+     "altitudeFt": 6808,
+     "source": "derived",
+     "date": "2016-01-07T20:37:15.000Z"
+    },
+    {
+     "lon": 8.3208,
+     "lat": 47.4457,
+     "speedMph": 312,
+     "altitudeFt": 7935,
+     "source": "derived",
+     "date": "2016-01-07T20:38:15.000Z"
+    },
+    {
+     "lon": 8.2412,
+     "lat": 47.3989,
+     "speedMph": 346,
+     "altitudeFt": 9181,
+     "source": "derived",
+     "date": "2016-01-07T20:39:16.000Z"
+    },
+    {
+     "lon": 8.1575,
+     "lat": 47.3507,
+     "speedMph": 364,
+     "altitudeFt": 10634,
+     "source": "derived",
+     "date": "2016-01-07T20:40:16.000Z"
+    },
+    {
+     "lon": 8.0714,
+     "lat": 47.3043,
+     "speedMph": 348,
+     "altitudeFt": 12234,
+     "source": "derived",
+     "date": "2016-01-07T20:41:16.000Z"
+    },
+    {
+     "lon": 7.977,
+     "lat": 47.2769,
+     "speedMph": 320,
+     "altitudeFt": 13896,
+     "source": "derived",
+     "date": "2016-01-07T20:42:16.000Z"
+    },
+    {
+     "lon": 7.8784,
+     "lat": 47.2839,
+     "speedMph": 285,
+     "altitudeFt": 15596,
+     "source": "derived",
+     "date": "2016-01-07T20:43:16.000Z"
+    },
+    {
+     "lon": 7.775,
+     "lat": 47.3126,
+     "speedMph": 315,
+     "altitudeFt": 16901,
+     "source": "derived",
+     "date": "2016-01-07T20:44:16.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652892631,
+   "callsign": "QTR26",
+   "tailNumber": "A7ACH",
+   "heading": 305.40435044297044,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.1218,
+     "lat": 48.6104,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:30.000Z"
+    },
+    {
+     "lon": 6.3034,
+     "lat": 48.5252,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:30.000Z"
+    },
+    {
+     "lon": 6.5006,
+     "lat": 48.432,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:30.000Z"
+    },
+    {
+     "lon": 6.6975,
+     "lat": 48.338,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:30.000Z"
+    },
+    {
+     "lon": 6.8936,
+     "lat": 48.2444,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:30.000Z"
+    },
+    {
+     "lon": 7.0908,
+     "lat": 48.1491,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:30.000Z"
+    },
+    {
+     "lon": 7.2802,
+     "lat": 48.0569,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:30.000Z"
+    },
+    {
+     "lon": 7.4736,
+     "lat": 47.962,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:30.000Z"
+    },
+    {
+     "lon": 7.6254,
+     "lat": 47.8828,
+     "speedMph": 564,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:30.000Z"
+    },
+    {
+     "lon": 7.815,
+     "lat": 47.7793,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:30.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853776,
+   "callsign": "AFR1326",
+   "tailNumber": "FGKXV",
+   "heading": 291.10324255179194,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.3015,
+     "lat": 48.244,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:29.000Z"
+    },
+    {
+     "lon": 6.5198,
+     "lat": 48.1881,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:29.000Z"
+    },
+    {
+     "lon": 6.7231,
+     "lat": 48.1355,
+     "speedMph": 604,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:30.000Z"
+    },
+    {
+     "lon": 6.9283,
+     "lat": 48.082,
+     "speedMph": 598,
+     "altitudeFt": 33000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:30.000Z"
+    },
+    {
+     "lon": 7.0896,
+     "lat": 48.0139,
+     "speedMph": 531,
+     "altitudeFt": 33024,
+     "source": "derived",
+     "date": "2016-01-07T20:38:30.000Z"
+    },
+    {
+     "lon": 7.2663,
+     "lat": 47.9329,
+     "speedMph": 556,
+     "altitudeFt": 33015,
+     "source": "derived",
+     "date": "2016-01-07T20:39:30.000Z"
+    },
+    {
+     "lon": 7.4491,
+     "lat": 47.841,
+     "speedMph": 604,
+     "altitudeFt": 33013,
+     "source": "derived",
+     "date": "2016-01-07T20:40:30.000Z"
+    },
+    {
+     "lon": 7.6327,
+     "lat": 47.7423,
+     "speedMph": 604,
+     "altitudeFt": 33010,
+     "source": "derived",
+     "date": "2016-01-07T20:41:30.000Z"
+    },
+    {
+     "lon": 7.8188,
+     "lat": 47.6531,
+     "speedMph": 604,
+     "altitudeFt": 33005,
+     "source": "derived",
+     "date": "2016-01-07T20:42:30.000Z"
+    },
+    {
+     "lon": 7.9946,
+     "lat": 47.5637,
+     "speedMph": 604,
+     "altitudeFt": 32998,
+     "source": "derived",
+     "date": "2016-01-07T20:43:30.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652931986,
+   "callsign": "SWR340",
+   "heading": 127.68433109343613,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.4289,
+     "lat": 47.5202,
+     "speedMph": 189,
+     "altitudeFt": 2995,
+     "source": "derived",
+     "date": "2016-01-07T20:35:38.000Z"
+    },
+    {
+     "lon": 8.3741,
+     "lat": 47.5488,
+     "speedMph": 198,
+     "altitudeFt": 3593,
+     "source": "derived",
+     "date": "2016-01-07T20:36:38.000Z"
+    },
+    {
+     "lon": 8.3169,
+     "lat": 47.5785,
+     "speedMph": 206,
+     "altitudeFt": 4193,
+     "source": "derived",
+     "date": "2016-01-07T20:37:38.000Z"
+    },
+    {
+     "lon": 8.2573,
+     "lat": 47.6095,
+     "speedMph": 214,
+     "altitudeFt": 4793,
+     "source": "derived",
+     "date": "2016-01-07T20:38:38.000Z"
+    },
+    {
+     "lon": 8.1952,
+     "lat": 47.6417,
+     "speedMph": 223,
+     "altitudeFt": 5394,
+     "source": "derived",
+     "date": "2016-01-07T20:39:38.000Z"
+    },
+    {
+     "lon": 8.1303,
+     "lat": 47.6753,
+     "speedMph": 231,
+     "altitudeFt": 5997,
+     "source": "derived",
+     "date": "2016-01-07T20:40:38.000Z"
+    },
+    {
+     "lon": 8.0632,
+     "lat": 47.7099,
+     "speedMph": 239,
+     "altitudeFt": 6598,
+     "source": "derived",
+     "date": "2016-01-07T20:41:38.000Z"
+    },
+    {
+     "lon": 7.9938,
+     "lat": 47.7456,
+     "speedMph": 248,
+     "altitudeFt": 7198,
+     "source": "derived",
+     "date": "2016-01-07T20:42:38.000Z"
+    },
+    {
+     "lon": 7.9219,
+     "lat": 47.7825,
+     "speedMph": 256,
+     "altitudeFt": 7799,
+     "source": "derived",
+     "date": "2016-01-07T20:43:38.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652889050,
+   "callsign": "EZY5299",
+   "tailNumber": "GEZTI",
+   "heading": 1.5526407793946724,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.3493,
+     "lat": 48.3678,
+     "speedMph": 542,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:21.000Z"
+    },
+    {
+     "lon": 8.3442,
+     "lat": 48.2428,
+     "speedMph": 532,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:21.000Z"
+    },
+    {
+     "lon": 8.3425,
+     "lat": 48.1158,
+     "speedMph": 528,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:21.000Z"
+    },
+    {
+     "lon": 8.3417,
+     "lat": 48.0054,
+     "speedMph": 490,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:21.000Z"
+    },
+    {
+     "lon": 8.3404,
+     "lat": 47.8748,
+     "speedMph": 510,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:22.000Z"
+    },
+    {
+     "lon": 8.339,
+     "lat": 47.7458,
+     "speedMph": 523,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:22.000Z"
+    },
+    {
+     "lon": 8.3375,
+     "lat": 47.6189,
+     "speedMph": 526,
+     "altitudeFt": 39000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:22.000Z"
+    },
+    {
+     "lon": 8.3358,
+     "lat": 47.4942,
+     "speedMph": 531,
+     "altitudeFt": 38968,
+     "source": "derived",
+     "date": "2016-01-07T20:42:22.000Z"
+    },
+    {
+     "lon": 8.3349,
+     "lat": 47.3684,
+     "speedMph": 531,
+     "altitudeFt": 38740,
+     "source": "derived",
+     "date": "2016-01-07T20:43:22.000Z"
+    },
+    {
+     "lon": 8.3449,
+     "lat": 47.24,
+     "speedMph": 531,
+     "altitudeFt": 37942,
+     "source": "derived",
+     "date": "2016-01-07T20:44:22.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652923136,
+   "callsign": "RYR3082",
+   "tailNumber": "EIEVK",
+   "heading": 169.6030321391259,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 6.2793,
+     "lat": 46.9709,
+     "speedMph": 440,
+     "altitudeFt": 37659,
+     "source": "derived",
+     "date": "2016-01-07T20:34:31.000Z"
+    },
+    {
+     "lon": 6.2501,
+     "lat": 47.0795,
+     "speedMph": 449,
+     "altitudeFt": 37927,
+     "source": "derived",
+     "date": "2016-01-07T20:35:32.000Z"
+    },
+    {
+     "lon": 6.2277,
+     "lat": 47.1857,
+     "speedMph": 459,
+     "altitudeFt": 38029,
+     "source": "derived",
+     "date": "2016-01-07T20:36:32.000Z"
+    },
+    {
+     "lon": 6.2193,
+     "lat": 47.301,
+     "speedMph": 482,
+     "altitudeFt": 38158,
+     "source": "derived",
+     "date": "2016-01-07T20:37:32.000Z"
+    },
+    {
+     "lon": 6.2156,
+     "lat": 47.415,
+     "speedMph": 484,
+     "altitudeFt": 38133,
+     "source": "derived",
+     "date": "2016-01-07T20:38:32.000Z"
+    },
+    {
+     "lon": 6.2284,
+     "lat": 47.5346,
+     "speedMph": 506,
+     "altitudeFt": 38037,
+     "source": "derived",
+     "date": "2016-01-07T20:39:32.000Z"
+    },
+    {
+     "lon": 6.2178,
+     "lat": 47.6504,
+     "speedMph": 494,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:32.000Z"
+    },
+    {
+     "lon": 6.2092,
+     "lat": 47.7646,
+     "speedMph": 484,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:32.000Z"
+    },
+    {
+     "lon": 6.2053,
+     "lat": 47.8776,
+     "speedMph": 475,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:32.000Z"
+    },
+    {
+     "lon": 6.2008,
+     "lat": 47.9966,
+     "speedMph": 482,
+     "altitudeFt": 38000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:32.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652925317,
+   "callsign": "BAW2587",
+   "heading": 119.98485203604183,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 7.5465,
+     "lat": 47.3984,
+     "speedMph": 425,
+     "altitudeFt": 36010,
+     "source": "derived",
+     "date": "2016-01-07T20:35:14.000Z"
+    },
+    {
+     "lon": 7.4276,
+     "lat": 47.4449,
+     "speedMph": 405,
+     "altitudeFt": 36000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:14.000Z"
+    },
+    {
+     "lon": 7.3033,
+     "lat": 47.4927,
+     "speedMph": 396,
+     "altitudeFt": 35956,
+     "source": "derived",
+     "date": "2016-01-07T20:37:14.000Z"
+    },
+    {
+     "lon": 7.1864,
+     "lat": 47.5378,
+     "speedMph": 374,
+     "altitudeFt": 35965,
+     "source": "derived",
+     "date": "2016-01-07T20:38:14.000Z"
+    },
+    {
+     "lon": 7.0649,
+     "lat": 47.5833,
+     "speedMph": 377,
+     "altitudeFt": 35942,
+     "source": "derived",
+     "date": "2016-01-07T20:39:14.000Z"
+    },
+    {
+     "lon": 6.9361,
+     "lat": 47.6326,
+     "speedMph": 393,
+     "altitudeFt": 35971,
+     "source": "derived",
+     "date": "2016-01-07T20:40:14.000Z"
+    },
+    {
+     "lon": 6.8092,
+     "lat": 47.6806,
+     "speedMph": 409,
+     "altitudeFt": 35973,
+     "source": "derived",
+     "date": "2016-01-07T20:41:14.000Z"
+    },
+    {
+     "lon": 6.6875,
+     "lat": 47.726,
+     "speedMph": 401,
+     "altitudeFt": 35987,
+     "source": "derived",
+     "date": "2016-01-07T20:42:14.000Z"
+    },
+    {
+     "lon": 6.5653,
+     "lat": 47.7713,
+     "speedMph": 390,
+     "altitudeFt": 36004,
+     "source": "derived",
+     "date": "2016-01-07T20:43:14.000Z"
+    },
+    {
+     "lon": 6.427,
+     "lat": 47.8228,
+     "speedMph": 420,
+     "altitudeFt": 36006,
+     "source": "derived",
+     "date": "2016-01-07T20:44:14.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652870644,
+   "callsign": "DLH1100",
+   "tailNumber": "DAIBI",
+   "heading": 16.060773762354025,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.3947,
+     "lat": 49.1317,
+     "speedMph": 538,
+     "altitudeFt": 22906,
+     "source": "derived",
+     "date": "2016-01-07T20:35:08.000Z"
+    },
+    {
+     "lon": 8.3404,
+     "lat": 49.0083,
+     "speedMph": 540,
+     "altitudeFt": 24412,
+     "source": "derived",
+     "date": "2016-01-07T20:36:08.000Z"
+    },
+    {
+     "lon": 8.2872,
+     "lat": 48.888,
+     "speedMph": 538,
+     "altitudeFt": 25957,
+     "source": "derived",
+     "date": "2016-01-07T20:37:08.000Z"
+    },
+    {
+     "lon": 8.2306,
+     "lat": 48.7591,
+     "speedMph": 556,
+     "altitudeFt": 27592,
+     "source": "derived",
+     "date": "2016-01-07T20:38:08.000Z"
+    },
+    {
+     "lon": 8.1769,
+     "lat": 48.6323,
+     "speedMph": 552,
+     "altitudeFt": 29083,
+     "source": "derived",
+     "date": "2016-01-07T20:39:08.000Z"
+    },
+    {
+     "lon": 8.1263,
+     "lat": 48.5124,
+     "speedMph": 531,
+     "altitudeFt": 30632,
+     "source": "derived",
+     "date": "2016-01-07T20:40:08.000Z"
+    },
+    {
+     "lon": 8.0724,
+     "lat": 48.3879,
+     "speedMph": 533,
+     "altitudeFt": 32087,
+     "source": "derived",
+     "date": "2016-01-07T20:41:08.000Z"
+    },
+    {
+     "lon": 8.0041,
+     "lat": 48.2695,
+     "speedMph": 524,
+     "altitudeFt": 33436,
+     "source": "derived",
+     "date": "2016-01-07T20:42:08.000Z"
+    },
+    {
+     "lon": 7.9283,
+     "lat": 48.1559,
+     "speedMph": 516,
+     "altitudeFt": 34929,
+     "source": "derived",
+     "date": "2016-01-07T20:43:08.000Z"
+    },
+    {
+     "lon": 7.8502,
+     "lat": 48.0449,
+     "speedMph": 507,
+     "altitudeFt": 36151,
+     "source": "derived",
+     "date": "2016-01-07T20:44:08.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652907610,
+   "callsign": "EZY2812",
+   "tailNumber": "GEZAU",
+   "heading": 159.68046455927,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.9504,
+     "lat": 45.1239,
+     "speedMph": 378,
+     "altitudeFt": 6791,
+     "source": "derived",
+     "date": "2016-01-07T20:33:26.000Z"
+    },
+    {
+     "lon": 8.9059,
+     "lat": 45.2087,
+     "speedMph": 374,
+     "altitudeFt": 5707,
+     "source": "derived",
+     "date": "2016-01-07T20:34:26.000Z"
+    },
+    {
+     "lon": 8.8616,
+     "lat": 45.2902,
+     "speedMph": 361,
+     "altitudeFt": 4851,
+     "source": "derived",
+     "date": "2016-01-07T20:35:26.000Z"
+    },
+    {
+     "lon": 8.8166,
+     "lat": 45.3648,
+     "speedMph": 340,
+     "altitudeFt": 4412,
+     "source": "derived",
+     "date": "2016-01-07T20:36:26.000Z"
+    },
+    {
+     "lon": 8.7782,
+     "lat": 45.4323,
+     "speedMph": 308,
+     "altitudeFt": 4188,
+     "source": "derived",
+     "date": "2016-01-07T20:37:26.000Z"
+    },
+    {
+     "lon": 8.7599,
+     "lat": 45.486,
+     "speedMph": 242,
+     "altitudeFt": 3502,
+     "source": "derived",
+     "date": "2016-01-07T20:38:26.000Z"
+    },
+    {
+     "lon": 8.7437,
+     "lat": 45.5347,
+     "speedMph": 202,
+     "altitudeFt": 2823,
+     "source": "derived",
+     "date": "2016-01-07T20:39:26.000Z"
+    },
+    {
+     "lon": 8.7412,
+     "lat": 45.5707,
+     "speedMph": 140,
+     "altitudeFt": 2137,
+     "source": "derived",
+     "date": "2016-01-07T20:40:26.000Z"
+    },
+    {
+     "lon": 8.7567,
+     "lat": 45.5971,
+     "speedMph": 106,
+     "altitudeFt": 911,
+     "source": "derived",
+     "date": "2016-01-07T20:41:26.000Z"
+    },
+    {
+     "lon": 8.7432,
+     "lat": 45.6759,
+     "speedMph": 115,
+     "altitudeFt": -4415,
+     "source": "derived",
+     "date": "2016-01-07T20:43:24.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853561,
+   "callsign": "AZA311",
+   "heading": 309.24413353444254,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 7.7172,
+     "lat": 46.364,
+     "speedMph": 462,
+     "altitudeFt": 27218,
+     "source": "derived",
+     "date": "2016-01-07T20:34:45.000Z"
+    },
+    {
+     "lon": 7.8399,
+     "lat": 46.2949,
+     "speedMph": 444,
+     "altitudeFt": 25449,
+     "source": "derived",
+     "date": "2016-01-07T20:35:45.000Z"
+    },
+    {
+     "lon": 7.9577,
+     "lat": 46.2282,
+     "speedMph": 426,
+     "altitudeFt": 23681,
+     "source": "derived",
+     "date": "2016-01-07T20:36:45.000Z"
+    },
+    {
+     "lon": 8.0701,
+     "lat": 46.1644,
+     "speedMph": 408,
+     "altitudeFt": 21916,
+     "source": "derived",
+     "date": "2016-01-07T20:37:45.000Z"
+    },
+    {
+     "lon": 8.1773,
+     "lat": 46.1032,
+     "speedMph": 390,
+     "altitudeFt": 20151,
+     "source": "derived",
+     "date": "2016-01-07T20:38:45.000Z"
+    },
+    {
+     "lon": 8.2795,
+     "lat": 46.0447,
+     "speedMph": 372,
+     "altitudeFt": 18386,
+     "source": "derived",
+     "date": "2016-01-07T20:39:45.000Z"
+    },
+    {
+     "lon": 8.3769,
+     "lat": 45.9888,
+     "speedMph": 354,
+     "altitudeFt": 16617,
+     "source": "derived",
+     "date": "2016-01-07T20:40:45.000Z"
+    },
+    {
+     "lon": 8.4697,
+     "lat": 45.9353,
+     "speedMph": 336,
+     "altitudeFt": 14843,
+     "source": "derived",
+     "date": "2016-01-07T20:41:46.000Z"
+    },
+    {
+     "lon": 8.5569,
+     "lat": 45.8848,
+     "speedMph": 318,
+     "altitudeFt": 13077,
+     "source": "derived",
+     "date": "2016-01-07T20:42:46.000Z"
+    },
+    {
+     "lon": 8.6392,
+     "lat": 45.8371,
+     "speedMph": 300,
+     "altitudeFt": 11312,
+     "source": "derived",
+     "date": "2016-01-07T20:43:46.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652850648,
+   "callsign": "AZA153",
+   "heading": 330.4486280830807,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.0931,
+     "lat": 46.9343,
+     "speedMph": 365,
+     "altitudeFt": 31145,
+     "source": "derived",
+     "date": "2016-01-07T20:34:50.000Z"
+    },
+    {
+     "lon": 8.1563,
+     "lat": 46.8582,
+     "speedMph": 360,
+     "altitudeFt": 29701,
+     "source": "derived",
+     "date": "2016-01-07T20:35:50.000Z"
+    },
+    {
+     "lon": 8.2183,
+     "lat": 46.7831,
+     "speedMph": 355,
+     "altitudeFt": 28261,
+     "source": "derived",
+     "date": "2016-01-07T20:36:50.000Z"
+    },
+    {
+     "lon": 8.2792,
+     "lat": 46.7091,
+     "speedMph": 349,
+     "altitudeFt": 26821,
+     "source": "derived",
+     "date": "2016-01-07T20:37:50.000Z"
+    },
+    {
+     "lon": 8.3391,
+     "lat": 46.6362,
+     "speedMph": 344,
+     "altitudeFt": 25381,
+     "source": "derived",
+     "date": "2016-01-07T20:38:50.000Z"
+    },
+    {
+     "lon": 8.3978,
+     "lat": 46.5645,
+     "speedMph": 338,
+     "altitudeFt": 23940,
+     "source": "derived",
+     "date": "2016-01-07T20:39:50.000Z"
+    },
+    {
+     "lon": 8.4555,
+     "lat": 46.4938,
+     "speedMph": 333,
+     "altitudeFt": 22500,
+     "source": "derived",
+     "date": "2016-01-07T20:40:50.000Z"
+    },
+    {
+     "lon": 8.5121,
+     "lat": 46.4242,
+     "speedMph": 328,
+     "altitudeFt": 21060,
+     "source": "derived",
+     "date": "2016-01-07T20:41:50.000Z"
+    },
+    {
+     "lon": 8.5677,
+     "lat": 46.3558,
+     "speedMph": 322,
+     "altitudeFt": 19619,
+     "source": "derived",
+     "date": "2016-01-07T20:42:50.000Z"
+    },
+    {
+     "lon": 8.6221,
+     "lat": 46.2884,
+     "speedMph": 317,
+     "altitudeFt": 18179,
+     "source": "derived",
+     "date": "2016-01-07T20:43:50.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652846653,
+   "callsign": "RYR1703",
+   "heading": 172.02312940325868,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 9.5924,
+     "lat": 46.0215,
+     "speedMph": 600,
+     "source": "derived",
+     "date": "2016-01-07T20:35:06.000Z"
+    },
+    {
+     "lon": 9.5767,
+     "lat": 46.0993,
+     "speedMph": 446,
+     "source": "derived",
+     "date": "2016-01-07T20:36:06.000Z"
+    },
+    {
+     "lon": 9.5123,
+     "lat": 46.1749,
+     "speedMph": 347,
+     "altitudeFt": 29693,
+     "source": "derived",
+     "date": "2016-01-07T20:37:06.000Z"
+    },
+    {
+     "lon": 9.4259,
+     "lat": 46.2335,
+     "speedMph": 352,
+     "altitudeFt": 31766,
+     "source": "derived",
+     "date": "2016-01-07T20:38:06.000Z"
+    },
+    {
+     "lon": 9.3238,
+     "lat": 46.2855,
+     "speedMph": 385,
+     "altitudeFt": 33115,
+     "source": "derived",
+     "date": "2016-01-07T20:39:06.000Z"
+    },
+    {
+     "lon": 9.2102,
+     "lat": 46.3355,
+     "speedMph": 407,
+     "altitudeFt": 34075,
+     "source": "derived",
+     "date": "2016-01-07T20:40:06.000Z"
+    },
+    {
+     "lon": 9.0956,
+     "lat": 46.3889,
+     "speedMph": 415,
+     "altitudeFt": 34948,
+     "source": "derived",
+     "date": "2016-01-07T20:41:06.000Z"
+    },
+    {
+     "lon": 8.9758,
+     "lat": 46.4452,
+     "speedMph": 428,
+     "altitudeFt": 35873,
+     "source": "derived",
+     "date": "2016-01-07T20:42:06.000Z"
+    },
+    {
+     "lon": 8.8554,
+     "lat": 46.5037,
+     "speedMph": 429,
+     "altitudeFt": 36964,
+     "source": "derived",
+     "date": "2016-01-07T20:43:06.000Z"
+    },
+    {
+     "lon": 8.732,
+     "lat": 46.5635,
+     "speedMph": 441,
+     "altitudeFt": 37839,
+     "source": "derived",
+     "date": "2016-01-07T20:44:06.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652850646,
+   "callsign": "BEL3151",
+   "tailNumber": "OODWG",
+   "heading": 356.72288061289794,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.4083,
+     "lat": 47.9988,
+     "speedMph": 499,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:45.000Z"
+    },
+    {
+     "lon": 8.4185,
+     "lat": 47.8796,
+     "speedMph": 499,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:45.000Z"
+    },
+    {
+     "lon": 8.4295,
+     "lat": 47.7601,
+     "speedMph": 498,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:45.000Z"
+    },
+    {
+     "lon": 8.4418,
+     "lat": 47.6414,
+     "speedMph": 493,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:45.000Z"
+    },
+    {
+     "lon": 8.4586,
+     "lat": 47.5209,
+     "speedMph": 500,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:45.000Z"
+    },
+    {
+     "lon": 8.4771,
+     "lat": 47.3962,
+     "speedMph": 512,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:45.000Z"
+    },
+    {
+     "lon": 8.4949,
+     "lat": 47.2688,
+     "speedMph": 527,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:45.000Z"
+    },
+    {
+     "lon": 8.5135,
+     "lat": 47.1394,
+     "speedMph": 541,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:46.000Z"
+    },
+    {
+     "lon": 8.5322,
+     "lat": 47.0108,
+     "speedMph": 544,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:46.000Z"
+    },
+    {
+     "lon": 8.5495,
+     "lat": 46.8903,
+     "speedMph": 514,
+     "altitudeFt": 31000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:46.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652917659,
+   "callsign": "TOM717",
+   "heading": 125.4157582226584,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 10.1513,
+     "lat": 46.3467,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:35:21.000Z"
+    },
+    {
+     "lon": 10.017,
+     "lat": 46.4127,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:36:21.000Z"
+    },
+    {
+     "lon": 9.8824,
+     "lat": 46.4786,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:37:21.000Z"
+    },
+    {
+     "lon": 9.7474,
+     "lat": 46.5443,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:38:21.000Z"
+    },
+    {
+     "lon": 9.6121,
+     "lat": 46.6099,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:39:21.000Z"
+    },
+    {
+     "lon": 9.4765,
+     "lat": 46.6753,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:40:21.000Z"
+    },
+    {
+     "lon": 9.3406,
+     "lat": 46.7405,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:41:21.000Z"
+    },
+    {
+     "lon": 9.2044,
+     "lat": 46.8056,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:42:21.000Z"
+    },
+    {
+     "lon": 9.0678,
+     "lat": 46.8705,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:43:21.000Z"
+    },
+    {
+     "lon": 8.9309,
+     "lat": 46.9352,
+     "speedMph": 471,
+     "altitudeFt": 31998,
+     "source": "derived",
+     "date": "2016-01-07T20:44:21.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853292,
+   "callsign": "ETD38",
+   "tailNumber": "A6ETS",
+   "heading": 301.7842958877684,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 7.3618,
+     "lat": 47.9594,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:34:35.000Z"
+    },
+    {
+     "lon": 7.5666,
+     "lat": 47.8746,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:35:35.000Z"
+    },
+    {
+     "lon": 7.7619,
+     "lat": 47.777,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:36:35.000Z"
+    },
+    {
+     "lon": 7.9265,
+     "lat": 47.6856,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:37:35.000Z"
+    },
+    {
+     "lon": 8.0833,
+     "lat": 47.5776,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:38:35.000Z"
+    },
+    {
+     "lon": 8.2804,
+     "lat": 47.4887,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:39:35.000Z"
+    },
+    {
+     "lon": 8.4819,
+     "lat": 47.376,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:40:35.000Z"
+    },
+    {
+     "lon": 8.6668,
+     "lat": 47.2729,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:41:35.000Z"
+    },
+    {
+     "lon": 8.8627,
+     "lat": 47.1625,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:42:35.000Z"
+    },
+    {
+     "lon": 9.0293,
+     "lat": 47.0677,
+     "speedMph": 604,
+     "altitudeFt": 35000,
+     "source": "derived",
+     "date": "2016-01-07T20:43:35.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652932034,
+   "callsign": "SWR1638",
+   "tailNumber": "HBIXQ",
+   "heading": 329.90290253108515,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.4498,
+     "lat": 47.5444,
+     "speedMph": 134,
+     "altitudeFt": 1417,
+     "source": "derived",
+     "date": "2016-01-07T20:34:40.000Z"
+    },
+    {
+     "lon": 8.5442,
+     "lat": 47.4345,
+     "speedMph": 105,
+     "altitudeFt": 219,
+     "source": "derived",
+     "date": "2016-01-07T20:35:40.000Z"
+    },
+    {
+     "lon": 8.5295,
+     "lat": 47.4859,
+     "speedMph": 134,
+     "altitudeFt": 3376,
+     "source": "derived",
+     "date": "2016-01-07T20:37:40.000Z"
+    },
+    {
+     "lon": 8.5017,
+     "lat": 47.5168,
+     "speedMph": 148,
+     "altitudeFt": 4963,
+     "source": "derived",
+     "date": "2016-01-07T20:38:40.000Z"
+    },
+    {
+     "lon": 8.4606,
+     "lat": 47.5105,
+     "speedMph": 172,
+     "altitudeFt": 6284,
+     "source": "derived",
+     "date": "2016-01-07T20:39:40.000Z"
+    },
+    {
+     "lon": 8.4398,
+     "lat": 47.4591,
+     "speedMph": 299,
+     "altitudeFt": 7779,
+     "source": "derived",
+     "date": "2016-01-07T20:40:40.000Z"
+    },
+    {
+     "lon": 8.4353,
+     "lat": 47.3889,
+     "speedMph": 372,
+     "altitudeFt": 9274,
+     "source": "derived",
+     "date": "2016-01-07T20:41:40.000Z"
+    },
+    {
+     "lon": 8.4386,
+     "lat": 47.3088,
+     "speedMph": 421,
+     "altitudeFt": 10770,
+     "source": "derived",
+     "date": "2016-01-07T20:42:40.000Z"
+    },
+    {
+     "lon": 8.4491,
+     "lat": 47.2107,
+     "speedMph": 487,
+     "altitudeFt": 13761,
+     "source": "derived",
+     "date": "2016-01-07T20:43:40.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652898570,
+   "callsign": "SWR1111",
+   "tailNumber": "HBIXO",
+   "heading": 38.98771026171924,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 9.0723,
+     "lat": 47.4811,
+     "speedMph": 240,
+     "altitudeFt": 7898,
+     "source": "derived",
+     "date": "2016-01-07T20:34:32.000Z"
+    },
+    {
+     "lon": 9.0251,
+     "lat": 47.4417,
+     "speedMph": 206,
+     "altitudeFt": 6915,
+     "source": "derived",
+     "date": "2016-01-07T20:35:32.000Z"
+    },
+    {
+     "lon": 8.9572,
+     "lat": 47.432,
+     "speedMph": 176,
+     "altitudeFt": 6046,
+     "source": "derived",
+     "date": "2016-01-07T20:36:32.000Z"
+    },
+    {
+     "lon": 8.893,
+     "lat": 47.4296,
+     "speedMph": 187,
+     "altitudeFt": 5475,
+     "source": "derived",
+     "date": "2016-01-07T20:37:32.000Z"
+    },
+    {
+     "lon": 8.8301,
+     "lat": 47.4344,
+     "speedMph": 202,
+     "altitudeFt": 5124,
+     "source": "derived",
+     "date": "2016-01-07T20:38:32.000Z"
+    },
+    {
+     "lon": 8.7689,
+     "lat": 47.4438,
+     "speedMph": 202,
+     "altitudeFt": 4634,
+     "source": "derived",
+     "date": "2016-01-07T20:39:32.000Z"
+    },
+    {
+     "lon": 8.7194,
+     "lat": 47.4466,
+     "speedMph": 168,
+     "altitudeFt": 3930,
+     "source": "derived",
+     "date": "2016-01-07T20:40:32.000Z"
+    },
+    {
+     "lon": 8.6738,
+     "lat": 47.4497,
+     "speedMph": 132,
+     "altitudeFt": 3262,
+     "source": "derived",
+     "date": "2016-01-07T20:41:32.000Z"
+    },
+    {
+     "lon": 8.63,
+     "lat": 47.4528,
+     "speedMph": 113,
+     "altitudeFt": 2577,
+     "source": "derived",
+     "date": "2016-01-07T20:42:32.000Z"
+    },
+    {
+     "lon": 8.5914,
+     "lat": 47.4551,
+     "speedMph": 102,
+     "altitudeFt": 1743,
+     "source": "derived",
+     "date": "2016-01-07T20:43:32.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652892514,
+   "callsign": "IBE3476",
+   "tailNumber": "ECIEF",
+   "heading": 240.2274367525972,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.2776,
+     "lat": 47.1813,
+     "speedMph": 412,
+     "altitudeFt": 13118,
+     "source": "derived",
+     "date": "2016-01-07T20:34:53.000Z"
+    },
+    {
+     "lon": 8.4037,
+     "lat": 47.2304,
+     "speedMph": 408,
+     "altitudeFt": 12350,
+     "source": "derived",
+     "date": "2016-01-07T20:35:53.000Z"
+    },
+    {
+     "lon": 8.5317,
+     "lat": 47.2688,
+     "speedMph": 393,
+     "altitudeFt": 10970,
+     "source": "derived",
+     "date": "2016-01-07T20:36:53.000Z"
+    },
+    {
+     "lon": 8.6542,
+     "lat": 47.3002,
+     "speedMph": 367,
+     "altitudeFt": 9438,
+     "source": "derived",
+     "date": "2016-01-07T20:37:53.000Z"
+    },
+    {
+     "lon": 8.7748,
+     "lat": 47.3284,
+     "speedMph": 351,
+     "altitudeFt": 8084,
+     "source": "derived",
+     "date": "2016-01-07T20:38:53.000Z"
+    },
+    {
+     "lon": 8.8655,
+     "lat": 47.3668,
+     "speedMph": 295,
+     "altitudeFt": 6949,
+     "source": "derived",
+     "date": "2016-01-07T20:39:53.000Z"
+    },
+    {
+     "lon": 8.8687,
+     "lat": 47.4097,
+     "speedMph": 170,
+     "altitudeFt": 6143,
+     "source": "derived",
+     "date": "2016-01-07T20:40:53.000Z"
+    },
+    {
+     "lon": 8.8275,
+     "lat": 47.433,
+     "speedMph": 186,
+     "altitudeFt": 5195,
+     "source": "derived",
+     "date": "2016-01-07T20:41:53.000Z"
+    },
+    {
+     "lon": 8.7683,
+     "lat": 47.446,
+     "speedMph": 258,
+     "altitudeFt": 4315,
+     "source": "derived",
+     "date": "2016-01-07T20:42:53.000Z"
+    },
+    {
+     "lon": 8.6947,
+     "lat": 47.4529,
+     "speedMph": 312,
+     "altitudeFt": 3508,
+     "source": "derived",
+     "date": "2016-01-07T20:43:53.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652931907,
+   "callsign": "SWR1734",
+   "tailNumber": "HBIPX",
+   "heading": 334.0060006861716,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.7913,
+     "lat": 47.1332,
+     "speedMph": 229,
+     "altitudeFt": 5843,
+     "source": "derived",
+     "date": "2016-01-07T20:38:23.000Z"
+    },
+    {
+     "lon": 8.8275,
+     "lat": 47.0827,
+     "speedMph": 237,
+     "altitudeFt": 6444,
+     "source": "derived",
+     "date": "2016-01-07T20:39:23.000Z"
+    },
+    {
+     "lon": 8.568,
+     "lat": 47.4698,
+     "speedMph": 54,
+     "source": "derived",
+     "date": "2016-01-07T20:40:23.000Z"
+    },
+    {
+     "lon": 8.5359,
+     "lat": 47.3994,
+     "speedMph": 356,
+     "source": "derived",
+     "date": "2016-01-07T20:41:23.000Z"
+    },
+    {
+     "lon": 8.572,
+     "lat": 47.4365,
+     "speedMph": 171,
+     "altitudeFt": 1647,
+     "source": "derived",
+     "date": "2016-01-07T20:42:23.000Z"
+    },
+    {
+     "lon": 8.5197,
+     "lat": 47.5058,
+     "speedMph": 172,
+     "altitudeFt": 4431,
+     "source": "derived",
+     "date": "2016-01-07T20:43:23.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652931884,
+   "callsign": "SWR1324",
+   "tailNumber": "HBIOC",
+   "heading": 235.76420205256926,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 9.0496,
+     "lat": 47.6765,
+     "speedMph": 236,
+     "altitudeFt": 6332,
+     "source": "derived",
+     "date": "2016-01-07T20:35:12.000Z"
+    },
+    {
+     "lon": 9.1207,
+     "lat": 47.7091,
+     "speedMph": 244,
+     "altitudeFt": 6932,
+     "source": "derived",
+     "date": "2016-01-07T20:36:12.000Z"
+    },
+    {
+     "lon": 8.6078,
+     "lat": 47.4275,
+     "speedMph": 110,
+     "altitudeFt": 1417,
+     "source": "derived",
+     "date": "2016-01-07T20:37:12.000Z"
+    },
+    {
+     "lon": 8.5504,
+     "lat": 47.3755,
+     "speedMph": 433,
+     "altitudeFt": 1206,
+     "source": "derived",
+     "date": "2016-01-07T20:38:12.000Z"
+    },
+    {
+     "lon": 8.5523,
+     "lat": 47.4721,
+     "speedMph": 237,
+     "altitudeFt": 1434,
+     "source": "derived",
+     "date": "2016-01-07T20:39:12.000Z"
+    },
+    {
+     "lon": 8.5112,
+     "lat": 47.5066,
+     "speedMph": 165,
+     "altitudeFt": 4017,
+     "source": "derived",
+     "date": "2016-01-07T20:40:12.000Z"
+    },
+    {
+     "lon": 8.4654,
+     "lat": 47.5205,
+     "speedMph": 152,
+     "altitudeFt": 5137,
+     "source": "derived",
+     "date": "2016-01-07T20:41:12.000Z"
+    },
+    {
+     "lon": 8.4292,
+     "lat": 47.4975,
+     "speedMph": 174,
+     "altitudeFt": 6230,
+     "source": "derived",
+     "date": "2016-01-07T20:42:12.000Z"
+    },
+    {
+     "lon": 8.4736,
+     "lat": 47.4805,
+     "speedMph": 200,
+     "altitudeFt": 7133,
+     "source": "derived",
+     "date": "2016-01-07T20:43:12.000Z"
+    },
+    {
+     "lon": 8.5546,
+     "lat": 47.4706,
+     "speedMph": 297,
+     "altitudeFt": 7829,
+     "source": "derived",
+     "date": "2016-01-07T20:44:12.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652870347,
+   "callsign": "CLH318",
+   "tailNumber": "DAECD",
+   "heading": 1.7211828357590797,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.4895,
+     "lat": 48.933,
+     "speedMph": 507,
+     "altitudeFt": 28433,
+     "source": "derived",
+     "date": "2016-01-07T20:35:11.000Z"
+    },
+    {
+     "lon": 8.4837,
+     "lat": 48.8062,
+     "speedMph": 525,
+     "altitudeFt": 29636,
+     "source": "derived",
+     "date": "2016-01-07T20:36:11.000Z"
+    },
+    {
+     "lon": 8.4782,
+     "lat": 48.6781,
+     "speedMph": 537,
+     "altitudeFt": 31567,
+     "source": "derived",
+     "date": "2016-01-07T20:37:11.000Z"
+    },
+    {
+     "lon": 8.4728,
+     "lat": 48.5524,
+     "speedMph": 538,
+     "altitudeFt": 32697,
+     "source": "derived",
+     "date": "2016-01-07T20:38:11.000Z"
+    },
+    {
+     "lon": 8.4675,
+     "lat": 48.4232,
+     "speedMph": 540,
+     "altitudeFt": 33108,
+     "source": "derived",
+     "date": "2016-01-07T20:39:11.000Z"
+    },
+    {
+     "lon": 8.4622,
+     "lat": 48.2968,
+     "speedMph": 533,
+     "altitudeFt": 33625,
+     "source": "derived",
+     "date": "2016-01-07T20:40:11.000Z"
+    },
+    {
+     "lon": 8.4566,
+     "lat": 48.1693,
+     "speedMph": 533,
+     "altitudeFt": 33812,
+     "source": "derived",
+     "date": "2016-01-07T20:41:11.000Z"
+    },
+    {
+     "lon": 8.4534,
+     "lat": 48.0435,
+     "speedMph": 524,
+     "altitudeFt": 33933,
+     "source": "derived",
+     "date": "2016-01-07T20:42:11.000Z"
+    },
+    {
+     "lon": 8.4602,
+     "lat": 47.914,
+     "speedMph": 533,
+     "altitudeFt": 33923,
+     "source": "derived",
+     "date": "2016-01-07T20:43:11.000Z"
+    },
+    {
+     "lon": 8.4744,
+     "lat": 47.783,
+     "speedMph": 540,
+     "altitudeFt": 34630,
+     "source": "derived",
+     "date": "2016-01-07T20:44:11.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652870722,
+   "callsign": "EDW1077",
+   "heading": 0.12374394221626696,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.5666,
+     "lat": 48.5504,
+     "speedMph": 253,
+     "altitudeFt": 16837,
+     "source": "derived",
+     "date": "2016-01-07T20:34:48.000Z"
+    },
+    {
+     "lon": 8.5664,
+     "lat": 48.4891,
+     "speedMph": 255,
+     "altitudeFt": 17484,
+     "source": "derived",
+     "date": "2016-01-07T20:35:48.000Z"
+    },
+    {
+     "lon": 8.5661,
+     "lat": 48.4273,
+     "speedMph": 257,
+     "altitudeFt": 18130,
+     "source": "derived",
+     "date": "2016-01-07T20:36:48.000Z"
+    },
+    {
+     "lon": 8.5671,
+     "lat": 48.6542,
+     "speedMph": 189,
+     "altitudeFt": 15640,
+     "source": "derived",
+     "date": "2016-01-07T20:37:48.000Z"
+    },
+    {
+     "lon": 8.5669,
+     "lat": 48.6085,
+     "speedMph": 189,
+     "altitudeFt": 16138,
+     "source": "derived",
+     "date": "2016-01-07T20:38:48.000Z"
+    },
+    {
+     "lon": 8.5667,
+     "lat": 48.5629,
+     "speedMph": 189,
+     "altitudeFt": 16637,
+     "source": "derived",
+     "date": "2016-01-07T20:39:48.000Z"
+    },
+    {
+     "lon": 8.5665,
+     "lat": 48.5171,
+     "speedMph": 189,
+     "altitudeFt": 17136,
+     "source": "derived",
+     "date": "2016-01-07T20:40:48.000Z"
+    },
+    {
+     "lon": 8.5663,
+     "lat": 48.4714,
+     "speedMph": 189,
+     "altitudeFt": 17635,
+     "source": "derived",
+     "date": "2016-01-07T20:41:48.000Z"
+    },
+    {
+     "lon": 8.5631,
+     "lat": 47.7602,
+     "speedMph": 223,
+     "altitudeFt": 7575,
+     "source": "derived",
+     "date": "2016-01-07T20:42:48.000Z"
+    },
+    {
+     "lon": 8.5629,
+     "lat": 47.7079,
+     "speedMph": 210,
+     "altitudeFt": 6719,
+     "source": "derived",
+     "date": "2016-01-07T20:43:48.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 652853806,
+   "callsign": "AFR1414",
+   "tailNumber": "FGUGD",
+   "heading": 272.0530387044384,
+   "source": "derived",
+   "positions": [
+    {
+     "lon": 8.0064,
+     "lat": 47.5285,
+     "speedMph": 382,
+     "altitudeFt": 14704,
+     "source": "derived",
+     "date": "2016-01-07T20:35:15.000Z"
+    },
+    {
+     "lon": 8.1419,
+     "lat": 47.5253,
+     "speedMph": 370,
+     "altitudeFt": 13762,
+     "source": "derived",
+     "date": "2016-01-07T20:36:15.000Z"
+    },
+    {
+     "lon": 8.257,
+     "lat": 47.503,
+     "speedMph": 332,
+     "altitudeFt": 13669,
+     "source": "derived",
+     "date": "2016-01-07T20:37:15.000Z"
+    },
+    {
+     "lon": 8.319,
+     "lat": 47.4147,
+     "speedMph": 307,
+     "altitudeFt": 12460,
+     "source": "derived",
+     "date": "2016-01-07T20:38:15.000Z"
+    },
+    {
+     "lon": 8.4047,
+     "lat": 47.3656,
+     "speedMph": 318,
+     "altitudeFt": 11717,
+     "source": "derived",
+     "date": "2016-01-07T20:39:16.000Z"
+    },
+    {
+     "lon": 8.5137,
+     "lat": 47.3466,
+     "speedMph": 296,
+     "altitudeFt": 10625,
+     "source": "derived",
+     "date": "2016-01-07T20:40:16.000Z"
+    },
+    {
+     "lon": 8.6235,
+     "lat": 47.3399,
+     "speedMph": 306,
+     "altitudeFt": 9559,
+     "source": "derived",
+     "date": "2016-01-07T20:41:16.000Z"
+    },
+    {
+     "lon": 8.7359,
+     "lat": 47.3482,
+     "speedMph": 344,
+     "altitudeFt": 8660,
+     "source": "derived",
+     "date": "2016-01-07T20:42:16.000Z"
+    },
+    {
+     "lon": 8.8409,
+     "lat": 47.366,
+     "speedMph": 337,
+     "altitudeFt": 7794,
+     "source": "derived",
+     "date": "2016-01-07T20:43:16.000Z"
+    },
+    {
+     "lon": 8.9127,
+     "lat": 47.399,
+     "speedMph": 268,
+     "altitudeFt": 6944,
+     "source": "derived",
+     "date": "2016-01-07T20:44:16.000Z"
+    }
+   ]
+  }
+ ]
+}

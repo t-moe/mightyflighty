@@ -24,7 +24,9 @@ void PlaneModel::addProvider(AbstractProvider *provider)
     _providers.append(provider);
     connect(provider,SIGNAL(newPlane(PlaneInfo*)),this,SLOT(addPlane(PlaneInfo*)));
     connect(provider,SIGNAL(planeRemoved(PlaneInfo*)),this,SLOT(removePlane(PlaneInfo*)));
-    //TODO: add already available planes to list?
+    for(PlaneInfo* pi : provider->planes()) {
+        addPlane(pi);
+    }
     //TODO: add removeProvider Method?
 }
 

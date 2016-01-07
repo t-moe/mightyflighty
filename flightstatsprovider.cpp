@@ -15,6 +15,8 @@ FlightstatsProvider::FlightstatsProvider(QNetworkAccessManager *manager, QQmlApp
     _manager = manager;
     connect(manager,SIGNAL(finished(QNetworkReply*)),this,SLOT(respFinished(QNetworkReply*)));
 
+    _timerId=-1;
+
     _appId = _settings.value("FlightstatsAppId").toString();
     _appKey = _settings.value("FlightstatsAppKey").toString();
     setEnabled(_settings.value("FlightstatsWasEnabled",false).toBool()); //will cause a request if enabled=true!
@@ -40,7 +42,10 @@ void FlightstatsProvider::setEnabled(bool en)
             makeSingleRequest();
             _timerId = startTimer(60000); //re-request every 60s
         } else {
-            killTimer(_timerId);
+            if(_timerId!=-1) {
+                killTimer(_timerId);
+                _timerId = -1;
+            }
             QMutableHashIterator<int, PlaneInfo*> it (_planes);
             while(it.hasNext()) {
                 PlaneInfo* pi = it.next().value();
@@ -65,7 +70,7 @@ void FlightstatsProvider::makeSingleRequest()
 
 
     //API-Doc see: https://developer.flightstats.com/api-docs/flightstatus/v2/flightsNear
-    QString uri = "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/%1/%2/%3?appId=%4&appKey=%5";
+    QString uri = "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/%1/%2/%3?appId=%4&appKey=%5&extendedOptions=useHttpErrors";
     uri = uri.arg(center.latitude()).arg(center.longitude()).arg(radius);
     uri = uri.arg(_appId,_appKey);
 
@@ -124,7 +129,7 @@ void FlightstatsProvider::respFinished(QNetworkReply* repl)
                         pi->setSpeed(speed);
                         connect(pi,SIGNAL(additionalDataRequested()),this,SLOT(additionalDataRequested()));
                         _planes[flightId] = pi;
-                          qDebug() << "Plane added:"<< pi->callSign();
+                          qDebug() << "Plane added:" << pi->callSign() << pi->currentCoordinate();
                         emit newPlane(pi);
                     } else {
                         PlaneInfo* pi = _planes[flightId];

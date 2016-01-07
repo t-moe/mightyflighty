@@ -6,5 +6,6 @@
         <file>center.png</file>
         <file>Plane.qml</file>
         <file>flightstatsconf.qml</file>
+        <file>dummydata1.json</file>
     </qresource>
 </RCC>

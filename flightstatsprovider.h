@@ -46,7 +46,7 @@ private:
     QSettings _settings;
     QString _appId;
     QString _appKey;
-    QHash<int,class PlaneInfo*> _planes;
+    QHash<int,PlaneInfo*> _planes;
     class QNetworkAccessManager* _manager;
     int _timerId;
     QQuickItem* _configItem;

@@ -4,6 +4,7 @@
 #include <QNetworkAccessManager>
 #include "planemodel.h"
 #include "flightstatsprovider.h"
+#include "dummydataprovider.h"
 
 int main(int argc, char *argv[])
 {
@@ -47,8 +48,10 @@ int main(int argc, char *argv[])
 
     QNetworkAccessManager man;
     FlightstatsProvider prov1 (&man,&engine);
+    DummyDataProvider prov2;
 
     planes.addProvider(&prov1);
+    planes.addProvider(&prov2);
     //planes.addPlane(new PlaneInfo("LX1234",QGeoCoordinate(46.9108846,7.4955513),10));
     //planes.addPlane(new PlaneInfo("EX2836",QGeoCoordinate(47.4501756,8.5612913),190.5));
     engine.rootContext()->setContextProperty("planeModel",&planes);
