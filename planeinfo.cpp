@@ -5,6 +5,10 @@ PlaneInfo::PlaneInfo(QString callSign, QGeoCoordinate coordinate, double heading
     _callSign = callSign;
     _currentCoordinate = coordinate;
     _heading = heading;
+    _speed = 0;
+    _altitude = 0;
+    _dataRequested = false;
+    _additionalData = QVariantMap();
 }
 
 double PlaneInfo::heading() const
@@ -33,4 +37,42 @@ QString PlaneInfo::callSign() const
 {
     return _callSign;
 }
+
+int PlaneInfo::altitude() const
+{
+    return _altitude;
+}
+
+void PlaneInfo::setAltitude(int altitude)
+{
+    _altitude = altitude;
+    emit altitudeChanged();
+}
+
+int PlaneInfo::speed() const
+{
+    return _speed;
+}
+
+void PlaneInfo::setSpeed(int speed)
+{
+    _speed = speed;
+    emit speedChanged();
+}
+
+QVariantMap PlaneInfo::additionalData()
+{
+    if(!_dataRequested) {
+        _dataRequested = true;
+        emit additionalDataRequested();
+    }
+    return _additionalData;
+}
+
+void PlaneInfo::setAdditionalData(const QVariantMap &additionalData)
+{
+    _additionalData = additionalData;
+    emit additionalDataChanged();
+}
+
 

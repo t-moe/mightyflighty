@@ -7,7 +7,7 @@
 
 class AbstractProvider : public QObject {
     Q_OBJECT
-    Q_PROPERTY(QString name READ name)
+    Q_PROPERTY(QString name READ name CONSTANT)
     Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
     Q_PROPERTY(QQuickItem* configItem READ configItem)
  public:

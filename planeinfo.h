@@ -3,13 +3,17 @@
 
 #include <QObject>
 #include <QGeoCoordinate>
+#include <QVariantMap>
 
 class PlaneInfo : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QGeoCoordinate CurrentCoordinate MEMBER _currentCoordinate NOTIFY coordinateChanged())
-    Q_PROPERTY(QString CallSign MEMBER _callSign NOTIFY callSignChanged())
+    Q_PROPERTY(QString CallSign MEMBER _callSign CONSTANT)
     Q_PROPERTY(double Heading MEMBER _heading NOTIFY headingChanged)
+    Q_PROPERTY(int Altitude READ altitude WRITE setAltitude NOTIFY altitudeChanged)
+    Q_PROPERTY(int Speed READ speed WRITE setSpeed NOTIFY speedChanged)
+    Q_PROPERTY(QVariantMap AdditionalData READ additionalData WRITE setAdditionalData NOTIFY additionalDataChanged)
 public:
     explicit PlaneInfo(QString callSign, QGeoCoordinate coordinate, double heading);
 
@@ -21,15 +25,32 @@ public:
 
     QString callSign() const;
 
+    int altitude() const;
+    void setAltitude(int altitude);
+
+    int speed() const;
+    void setSpeed(int speed);
+
+
+    QVariantMap additionalData();
+    void setAdditionalData(const QVariantMap &additionalData);
+
 private:
+    bool _dataRequested;
+    QVariantMap _additionalData;
     QGeoCoordinate _currentCoordinate;
     QString _callSign;
     double _heading;
+    int _altitude;
+    int _speed;
 
 signals:
-    void callSignChanged();
     void coordinateChanged();
     void headingChanged();
+    void altitudeChanged();
+    void speedChanged();
+    void additionalDataChanged();
+    void additionalDataRequested();
 
 };
 

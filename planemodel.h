@@ -8,7 +8,7 @@
 class PlaneModel : public QAbstractListModel
 {
     Q_OBJECT
-    Q_PROPERTY(QVariant providers READ providers)
+    Q_PROPERTY(QVariant providers READ providers CONSTANT)
 public:
     PlaneModel();
 

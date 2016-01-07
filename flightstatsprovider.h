@@ -29,6 +29,7 @@ public:
     QString appKey() const;
     void setAppKey(const QString &appKey);
 
+
 signals:
     void appKeyChanged();
     void appIdChanged();
@@ -37,6 +38,7 @@ public slots:
 
 private slots:
     void respFinished(class QNetworkReply* repl);
+    void additionalDataRequested();
 
 protected:
     void timerEvent(QTimerEvent *event);
@@ -44,13 +46,14 @@ private:
     QSettings _settings;
     QString _appId;
     QString _appKey;
-    QHash<QString,class PlaneInfo*> _planes;
+    QHash<int,class PlaneInfo*> _planes;
     class QNetworkAccessManager* _manager;
     int _timerId;
     QQuickItem* _configItem;
     bool _enabled;
 
     void makeSingleRequest();
+    void makeDetailsRequest(int flightnumber);
 
 
 };
