@@ -80,7 +80,7 @@ void FlightstatsProvider::makeSingleRequest()
 
 void FlightstatsProvider::makeDetailsRequest(int flightnumber) {
     //API-Doc see: https://developer.flightstats.com/api-docs/flightstatus/v2/flighttrackresponse
-    QString uri = "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/track/%1?appId=%2&appKey=%3&includeFlightPlan=true&maxPositions=1&extendedOptions=useInlinedReferences";
+    QString uri = "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/track/%1?appId=%2&appKey=%3&includeFlightPlan=true&extendedOptions=useInlinedReferences";
     uri = uri.arg(flightnumber);
     uri = uri.arg(_appId,_appKey);
     _manager->get(QNetworkRequest(QUrl(uri)));
@@ -149,7 +149,7 @@ void FlightstatsProvider::respFinished(QNetworkReply* repl)
                         it.remove();
                         qDebug() << "Plane removed:"<< pi->callSign();
                         emit planeRemoved(pi);
-                        delete pi;
+                        pi->deleteLater();
                     }
                 }
             }
@@ -168,6 +168,7 @@ void FlightstatsProvider::respFinished(QNetworkReply* repl)
                     if(!arr.isEmpty()) result["arrivalAirport"] = QString("%1 (%2)").arg(arr["fs"].toString(),arr["name"].toString());
 
                     QVariantList waypoints = variantmap["waypoints"].toList();
+                    if(waypoints.isEmpty()) waypoints = variantmap["positions"].toList();
                     if(!waypoints.isEmpty()) {
                         QVariantList pts;
                         for(int i=0; i<waypoints.length(); i++) {
@@ -176,6 +177,7 @@ void FlightstatsProvider::respFinished(QNetworkReply* repl)
                         }
                         result["route"] = QVariant::fromValue(pts);
                     }
+
 
                     _planes[flightId]->setAdditionalData(result);
                 }

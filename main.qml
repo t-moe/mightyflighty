@@ -119,6 +119,7 @@ ApplicationWindow {
                     text: "X"
                     onClicked: {
                         detailsDialog.visible=false;
+                        mapRoute.visible = false;
                         activePlane = null
                     }
                 }
