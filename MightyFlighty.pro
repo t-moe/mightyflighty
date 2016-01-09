@@ -8,13 +8,15 @@ SOURCES +=  main.cpp \
             planeinfo.cpp \
             flightstatsprovider.cpp \
             abstractprovider.cpp \
-            dummydataprovider.cpp
+            dummydataprovider.cpp \
+            iocontroller.cpp
 HEADERS += \
             planemodel.h \
             planeinfo.h \
             flightstatsprovider.h \
             abstractprovider.h \
-            dummydataprovider.h
+            dummydataprovider.h \
+            iocontroller.h
 
 
 RESOURCES += qml.qrc

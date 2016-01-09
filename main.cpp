@@ -5,6 +5,7 @@
 #include "planemodel.h"
 #include "flightstatsprovider.h"
 #include "dummydataprovider.h"
+#include "iocontroller.h"
 
 int main(int argc, char *argv[])
 {
@@ -43,7 +44,7 @@ int main(int argc, char *argv[])
     engine.addImportPath("/usr/local/Qt5.5.1/qml/");
     #endif
 
-
+    qmlRegisterType<IoController>("MightyFlighty",1,0,"IoController"); //IoController will be created from main.qml
     PlaneModel planes;
 
     QNetworkAccessManager man;
@@ -55,6 +56,7 @@ int main(int argc, char *argv[])
     //planes.addPlane(new PlaneInfo("LX1234",QGeoCoordinate(46.9108846,7.4955513),10));
     //planes.addPlane(new PlaneInfo("EX2836",QGeoCoordinate(47.4501756,8.5612913),190.5));
     engine.rootContext()->setContextProperty("planeModel",&planes);
+
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     return app.exec();

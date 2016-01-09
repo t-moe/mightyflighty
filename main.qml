@@ -4,6 +4,7 @@ import QtQuick.Dialogs 1.2
 import QtPositioning 5.5
 import QtLocation 5.5
 import QtQuick.Layouts 1.2
+import MightyFlighty 1.0
 
 ApplicationWindow {
     id: appwindow
@@ -64,10 +65,53 @@ ApplicationWindow {
     }
 
 
+    Rectangle {
+        id: exitScreen
+        anchors.fill: parent
+        anchors.centerIn: parent
+        z:100
+        visible: false
+        color: "black"
+        function activate() {
+            visible= true;
+            timer.start();
+        }
+
+        Timer {
+            id:timer
+            interval: 300
+            repeat: false
+            onTriggered: {
+                appwindow.close();
+            }
+        }
+
+        Text{
+            text: "Bye"
+            color: "white"
+            font.pixelSize: 48
+            anchors.centerIn: parent
+        }
+    }
+
+    Button {
+        id: exitButton
+        anchors.margins: 5
+        anchors.right: parent.right
+        anchors.top: parent.top
+        width: 50
+        height: 50
+        Image {
+                anchors.fill: parent
+                source: "exit.png"
+            }
+        onClicked: exitScreen.activate()
+    }
+
     Button {
         id: settingsButton
         anchors.margins: 5
-        anchors.right: parent.right
+        anchors.right: exitButton.left
         anchors.top: parent.top
         width: 50
         height: 50
@@ -102,6 +146,15 @@ ApplicationWindow {
         id: settingsDialog
         providers: planeModel.providers
         supportedMapTypes: mapOfEurope.supportedMapTypes
+    }
+
+    IoController {
+        onButtonPressed: {
+            setState(IoController.Led1,button===IoController.Button1);
+        }
+        Component.onCompleted: {
+            setState(IoController.Led3,true);
+        }
     }
 
 }

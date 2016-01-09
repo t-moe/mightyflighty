@@ -9,5 +9,6 @@
         <file>dummydata1.json</file>
         <file>DetailsDialog.qml</file>
         <file>SettingsDialog.qml</file>
+        <file>exit.png</file>
     </qresource>
 </RCC>
