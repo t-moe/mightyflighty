@@ -7,5 +7,7 @@
         <file>Plane.qml</file>
         <file>flightstatsconf.qml</file>
         <file>dummydata1.json</file>
+        <file>DetailsDialog.qml</file>
+        <file>SettingsDialog.qml</file>
     </qresource>
 </RCC>
