@@ -24,10 +24,12 @@ Rectangle {
         visible = true;
     }
     function close() {
-        visible = false;
-        routeVisible = false;
-        routeData = null;
-        closed();
+        if(visible) {
+            visible = false;
+            routeVisible = false;
+            routeData = null;
+            closed();
+        }
     }
     
     Repeater {

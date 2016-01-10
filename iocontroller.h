@@ -11,24 +11,24 @@ public:
     explicit IoController();
     ~IoController();
 
-    enum class Buttons {
-        Button1 = 49,
-        Button2 = 112,
-        Button3 = 51,
-        Button4 = 7,
+    enum Buttons {
+        Button1 = 1,
+        Button2 = 2,
+        Button3 = 3,
+        Button4 = 4,
     };
     Q_ENUM(Buttons)
 
-    enum class Leds {
-        Led1 = 61,
-        Led2 = 44,
-        Led3 = 68,
-        Led4 = 67,
+    enum Leds {
+        Led1 = 1,
+        Led2 = 2,
+        Led3 = 3,
+        Led4 = 4,
     };
     Q_ENUM(Leds)
 
-    Q_INVOKABLE const QVector<Buttons>& allButtons() const;
-    Q_INVOKABLE const QVector<Leds>& allLeds() const;
+    Q_INVOKABLE int buttonCount() const;
+    Q_INVOKABLE int ledCount() const;
 
 
     Q_INVOKABLE bool isActive(Buttons button) const;
@@ -38,11 +38,13 @@ public:
  private:
     int _timerId;
     QVector<bool> _lastButtonStates;
+    QVector<int> _buttonPressTime;
  protected:
     void timerEvent(QTimerEvent* ev) Q_DECL_OVERRIDE;
 
 signals:
     void buttonPressed(Buttons button);
+    void buttonLongPressed(Buttons button);
     void buttonStateChanged(Buttons button, bool isActive);
 };
 

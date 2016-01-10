@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <QHash>
 
 //--- Lowlevel helper code ahead. TODO: Cleanup and refactor it ---
 #ifdef IS_EMBEDDED
@@ -131,6 +132,16 @@ int sysfs_gpio_handler(uint8_t function, uint32_t gpio, const char *val)
   return 0;
  }
 
+static QHash<int,int> buttonGpio = {{IoController::Buttons::Button1,49},
+                                        {IoController::Buttons::Button2,112},
+                                        {IoController::Buttons::Button3,51},
+                                        {IoController::Buttons::Button4,7}};
+
+static QHash<int,int> ledGpio = {{IoController::Leds::Led1,61},
+                                  {IoController::Leds::Led2,44},
+                                  {IoController::Leds::Led3,68},
+                                  {IoController::Leds::Led4,67}};
+
 #endif
 
 //--- Class implementation ahead ---
@@ -138,20 +149,21 @@ int sysfs_gpio_handler(uint8_t function, uint32_t gpio, const char *val)
 IoController::IoController()
 {
     #ifdef IS_EMBEDDED
-    for(int i=0; i<allButtons().count(); i++) {
-        sysfs_gpio_handler(GPIO_SYSFS_EXPORT, static_cast<uint32_t>(allButtons()[i]), NULL);
-        sysfs_gpio_handler(GPIO_SYSFS_SET_DIRECTION, static_cast<uint32_t>(allButtons()[i]), "in");
+    for(int i=0; i<buttonCount(); i++) {
+        sysfs_gpio_handler(GPIO_SYSFS_EXPORT, buttonGpio[i], NULL);
+        sysfs_gpio_handler(GPIO_SYSFS_SET_DIRECTION, buttonGpio[i], "in");
     }
 
-    for(int i=0; i<allLeds().count(); i++) {
-        sysfs_gpio_handler(GPIO_SYSFS_EXPORT, static_cast<uint32_t>(allLeds()[i]), NULL);
-        sysfs_gpio_handler(GPIO_SYSFS_SET_DIRECTION, static_cast<uint32_t>(allLeds()[i]), "out");
-        sysfs_gpio_handler(GPIO_SYSFS_SET_VALUE, static_cast<uint32_t>(allLeds()[i]), "1");
+    for(int i=0; i<ledCount(); i++) {
+        sysfs_gpio_handler(GPIO_SYSFS_EXPORT, ledGpio[i], NULL);
+        sysfs_gpio_handler(GPIO_SYSFS_SET_DIRECTION, ledGpio[i],"out");
+        sysfs_gpio_handler(GPIO_SYSFS_SET_VALUE, ledGpio[i], "1");
     }
     #endif
 
-     for(int i=0; i<allButtons().count(); i++) {
-         _lastButtonStates.append(isActive(allButtons()[i]));
+     for(int i=0; i<buttonCount(); i++) {
+         _lastButtonStates.append(isActive(static_cast<Buttons>(i)));
+         _buttonPressTime.append(0);
      }
     _timerId = startTimer(50);
 }
@@ -160,31 +172,38 @@ IoController::~IoController()
 {
     #ifdef IS_EMBEDDED
     killTimer(_timerId);
-    for(int i=0; i<allButtons().count(); i++) {
-        sysfs_gpio_handler(GPIO_SYSFS_UNEXPORT, static_cast<uint32_t>(allButtons()[i]), NULL);
+    for(int i=0; i<buttonCount(); i++) {
+        sysfs_gpio_handler(GPIO_SYSFS_UNEXPORT, buttonGpio[i], NULL);
     }
-    for(int i=0; i<allLeds().count(); i++) {
-        sysfs_gpio_handler(GPIO_SYSFS_UNEXPORT, static_cast<uint32_t>(allLeds()[i]), NULL);
+    for(int i=0; i<ledCount(); i++) {
+        sysfs_gpio_handler(GPIO_SYSFS_UNEXPORT, ledGpio[i], NULL);
     }
+#endif
+}
+
+int IoController::buttonCount() const
+{
+    #ifdef IS_EMBEDDED
+    return buttonGpio.count();
+    #else
+    return 0;
     #endif
 }
 
-const QVector<IoController::Buttons> &IoController::allButtons() const
+int IoController::ledCount() const
 {
-    static QVector<Buttons> buttons = {Buttons::Button1, Buttons::Button2, Buttons::Button3, Buttons::Button4};
-    return buttons;
+     #ifdef IS_EMBEDDED
+    return ledGpio.count();
+    #else
+    return 0;
+    #endif
 }
 
-const QVector<IoController::Leds> &IoController::allLeds() const
-{
-    static QVector<Leds> leds = {Leds::Led1, Leds::Led2, Leds::Led3, Leds::Led4};
-    return leds;
-}
 
 bool IoController::isActive(IoController::Buttons button) const
 {
     #ifdef IS_EMBEDDED
-    return sysfs_gpio_handler(GPIO_SYSFS_GET_VALUE, static_cast<uint32_t>(button), NULL);
+    return sysfs_gpio_handler(GPIO_SYSFS_GET_VALUE, buttonGpio[button], NULL);
     #else
     return false;
     #endif
@@ -193,7 +212,7 @@ bool IoController::isActive(IoController::Buttons button) const
 bool IoController::isActive(IoController::Leds led) const
 {
     #ifdef IS_EMBEDDED
-    return sysfs_gpio_handler(GPIO_SYSFS_GET_VALUE, static_cast<uint32_t>(led), NULL);
+    return sysfs_gpio_handler(GPIO_SYSFS_GET_VALUE, ledGpio[led], NULL);
     #else
     return false;
     #endif
@@ -202,22 +221,30 @@ bool IoController::isActive(IoController::Leds led) const
 void IoController::setState(Leds led, bool active)
 {
     #ifdef IS_EMBEDDED
-    sysfs_gpio_handler(GPIO_SYSFS_SET_VALUE, static_cast<uint32_t>(led), active ? "0":"1");
+    sysfs_gpio_handler(GPIO_SYSFS_SET_VALUE, ledGpio[led], active ? "0":"1");
     #endif
 }
 
 void IoController::timerEvent(QTimerEvent*)
 {
-    for(int i=0; i<allButtons().count(); i++) {
-        Buttons b = allButtons()[i];
+    for(int i=0; i<buttonCount(); i++) {
+        Buttons b = static_cast<Buttons>(i);
         bool curState = isActive(b);
         bool lastState = _lastButtonStates[i];
         _lastButtonStates[i] = curState;
         if(curState!=lastState) {
             emit buttonStateChanged(b,curState);
         }
-        if(curState && ! lastState) {
+        if(!curState && lastState && _buttonPressTime[i] < 20) {
             emit buttonPressed(b);
+        } else if(_buttonPressTime[i]==20) {
+            emit buttonLongPressed(b);
         }
+        if(curState) {
+            _buttonPressTime[i]++;
+        } else {
+            _buttonPressTime[i]=0;
+        }
+
     }
 }

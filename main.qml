@@ -11,13 +11,61 @@ ApplicationWindow {
     visible: true
     title: "MightyFlighty"
 
+    //------------Plane selection stuff ahead ------------------------------------------------------------
+    property variant activePlane : null //Plane that is currently opened in the Details Dialog
+    property bool    activePlaneIsBound : false //Whether or not the activePlane is at least bound to one button, and therefore the map cannot be moved
+    property variant boundPlanes : ({}) //An object which maps a button number 0..3 to a plane object, to save the button->plane mapping
+
+    //Binds the currently active plane to a button, or unbinds the button if no plane is active
+    function bindCurrentPlane(button) {
+        boundPlanes[button] = activePlane;
+        if(activePlane) {
+            mapOfEurope.center = activePlane.CurrentCoordinate; //center plane in screen
+            activePlaneIsBound = true;
+            ioc.setState(button,true); //Turn on led for the corresponding button
+        }
+    }
+
+    //Opens the dialog for the passed plane, or closes the dialog if no valid plane is passed
+    function openPlane(plane) {
+        if(!plane) {
+            closePlane();
+            return;
+        }
+        activePlaneIsBound = false;
+        activePlane=plane;
+        for(var i=0; i<ioc.buttonCount(); i++) {
+            //Turn led of button either on or off, depending on whether the button is bound to the current Plane
+            if(boundPlanes[i] === plane) {
+                ioc.setState(i,true);
+                activePlaneIsBound = true;
+                mapOfEurope.center =plane.CurrentCoordinate;
+            } else {
+                ioc.setState(i,false);
+            }
+        }
+        detailsDialog.open(plane);
+    }
+
+    //Closes the details dialog
+    function closePlane() {
+        detailsDialog.close();
+        activePlaneIsBound = false;
+        activePlane=null;
+        //Turn all leds off
+        for(var i=0; i<ioc.buttonCount(); i++) {
+           ioc.setState(i,false);
+        }
+    }
+
+    //-----------------Window content ahead -------------------
 
     property variant topLeftEurope: QtPositioning.coordinate(51, -11)
     property variant bottomRightEurope: QtPositioning.coordinate(43,19)
     property variant centerOfEurope: QtPositioning.coordinate(46.8,8.1);
     property variant viewOfEurope: QtPositioning.rectangle(topLeftEurope, bottomRightEurope)
-    property variant activePlane : null
     //property variant planeModel  <-- planeModel is a property of the (root)context and will be set from outside, before the component is created
+
 
     Map {
          id: mapOfEurope
@@ -28,6 +76,7 @@ ApplicationWindow {
          plugin: Plugin {
             name: "osm" //open street map backend
          }
+         gesture.activeGestures: activePlaneIsBound ? 1 : 7
 
          /*Plane {
             pilotName:"anton"
@@ -54,10 +103,7 @@ ApplicationWindow {
 
                     MouseArea {
                         anchors.fill: parent
-                        onClicked: {
-                          detailsDialog.open(display);
-                          activePlane=display;
-                        }
+                        onClicked: openPlane(display)
                     }
                 }
             }
@@ -138,8 +184,7 @@ ApplicationWindow {
 
     DetailsDialog {
         id: detailsDialog
-        onClosed:  activePlane = null
-
+        onClosed: closePlane()
     }
 
     SettingsDialog {
@@ -149,12 +194,8 @@ ApplicationWindow {
     }
 
     IoController {
-        onButtonPressed: {
-            setState(IoController.Led1,button===IoController.Button1);
-        }
-        Component.onCompleted: {
-            setState(IoController.Led3,true);
-        }
+        id: ioc
+        onButtonLongPressed: bindCurrentPlane(button)
+        onButtonPressed: openPlane(boundPlanes[button])
     }
-
 }
