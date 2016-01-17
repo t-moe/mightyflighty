@@ -58,6 +58,15 @@ ApplicationWindow {
         }
     }
 
+    //Changes the zoomlevel of the map to a level depending on the poti value
+    function changeZoomLevel(potiVoltage) {
+        //poti value is a real from 0 ... 1.8 (Volt)
+       mapOfEurope.zoomLevel = 4+potiVoltage*6; //minimum zoomlevel will be 4, maximum will be around 14.8
+       if(activePlane!=null) {
+           mapOfEurope.center = activePlane.CurrentCoordinate;
+       }
+    }
+
     //-----------------Window content ahead -------------------
 
     property variant topLeftEurope: QtPositioning.coordinate(51, -11)
@@ -197,5 +206,6 @@ ApplicationWindow {
         id: ioc
         onButtonLongPressed: bindCurrentPlane(button)
         onButtonPressed: openPlane(boundPlanes[button])
+        onPotiValueChanged: changeZoomLevel(newValue)
     }
 }

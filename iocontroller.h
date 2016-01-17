@@ -35,8 +35,11 @@ public:
     Q_INVOKABLE bool isActive(Leds led) const;
     Q_INVOKABLE void setState(Leds led, bool active);
 
+    Q_INVOKABLE float potiValue() const;
+
  private:
     int _timerId;
+    float _lastPotiValue;
     QVector<bool> _lastButtonStates;
     QVector<int> _buttonPressTime;
  protected:
@@ -46,6 +49,7 @@ signals:
     void buttonPressed(Buttons button);
     void buttonLongPressed(Buttons button);
     void buttonStateChanged(Buttons button, bool isActive);
+    void potiValueChanged(float newValue);
 };
 
 #endif // IOCONTROLLER_H

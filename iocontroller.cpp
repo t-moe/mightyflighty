@@ -33,7 +33,7 @@ enum {
  * value:    value to write or null
  ***************************************************************************
  */
-int sysfs_gpio_handler(uint8_t function, uint32_t gpio, const char *val)
+static int sysfs_gpio_handler(uint8_t function, uint32_t gpio, const char *val)
  {
   char     path_str[MAX_PATH_STR];
   char     strBuf[MAX_STR_BUF];
@@ -132,6 +132,29 @@ int sysfs_gpio_handler(uint8_t function, uint32_t gpio, const char *val)
   return 0;
  }
 
+static float sysfs_get_adc() {
+    int32_t fd = open("/sys/bus/iio/devices/iio:device0/in_voltage4_raw", O_RDONLY);
+    static char buf[16];
+    if (fd  < 0)
+     {
+      perror("cannot access adc dev");
+      return fd;
+     }
+    int charRead = read(fd, buf, sizeof(buf));
+    close(fd);
+    if (charRead != -1)
+     {
+      buf[charRead] = '\0';
+
+      float aValue = (float) atoi(buf);
+      aValue = (1.8 * aValue) / ((1<<12)-1);
+
+      return aValue;
+    }
+    return -1;
+}
+
+
 static QHash<int,int> buttonGpio = {{IoController::Buttons::Button1,49},
                                         {IoController::Buttons::Button2,112},
                                         {IoController::Buttons::Button3,51},
@@ -165,6 +188,8 @@ IoController::IoController()
          _lastButtonStates.append(isActive(static_cast<Buttons>(i)));
          _buttonPressTime.append(0);
      }
+     _lastPotiValue = potiValue();
+
     _timerId = startTimer(50);
 }
 
@@ -225,6 +250,16 @@ void IoController::setState(Leds led, bool active)
     #endif
 }
 
+float IoController::potiValue() const
+{
+    #ifdef IS_EMBEDDED
+    return sysfs_get_adc();
+    #else
+    return 0;
+    #endif
+}
+
+
 void IoController::timerEvent(QTimerEvent*)
 {
     for(int i=0; i<buttonCount(); i++) {
@@ -245,6 +280,12 @@ void IoController::timerEvent(QTimerEvent*)
         } else {
             _buttonPressTime[i]=0;
         }
-
     }
+    float curPotiValue = potiValue();
+    #define MIN_CHANGE 0.015
+    if(fabs(curPotiValue-_lastPotiValue) > MIN_CHANGE) {
+        _lastPotiValue = curPotiValue;
+        emit potiValueChanged(curPotiValue);
+    }
+
 }
