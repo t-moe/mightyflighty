@@ -37,7 +37,7 @@ Dialog {
             anchors.margins: 5
             anchors.left: parent.left
             anchors.top: parent.top
-            font.pixelSize: 24
+            font.pixelSize: 32
             text: "Settings"
         }
         
@@ -50,8 +50,8 @@ Dialog {
             
             GroupBox {
                 title: "Map Style"
-                height: 240
-                width: 200
+                height: 260
+                width: 210
                 
                 //Combobox is not supported when using eglfs :( . See: https://bugreports.qt.io/browse/QTBUG-38405
                 ListView {
@@ -63,10 +63,10 @@ Dialog {
                     interactive: false
                     delegate: Item { //Template for how to render a single row
                         width: parent.width
-                        height: 18
+                        height: 32
                         Text {
                             text: name //use the name property as text
-                            //font.pixelSize: 20
+                            font.pixelSize: 24
                         }
                         MouseArea {
                             anchors.fill: parent
@@ -89,8 +89,8 @@ Dialog {
             
             GroupBox {
                 title: "Data Providers"
-                height: 240
-                width: 200
+                height: 260
+                width: 350
                 ListView {
                     model: providers //providers is a QObjectList containing AbstractProviders
                     interactive: false
@@ -101,14 +101,27 @@ Dialog {
                         Row {
                             spacing: 5.0
                             CheckBox {
-                                text: model.modelData.name
+                                id: cb
+                                transform: Scale {
+                                    origin.x: 0;
+                                    origin.y: height/2;
+                                    xScale: 1.3;
+                                    yScale: 1.3;
+                                }
                                 anchors.verticalCenter: parent.verticalCenter
                                 onClicked: model.modelData.enabled = checked //modify model if checkbox state changes
                                 Component.onCompleted: checked = model.modelData.enabled //load checked state on startup
                             }
+                            Text {
+                                text:  model.modelData.name
+                                font.pixelSize: 24
+                                anchors.verticalCenter: parent.verticalCenter
+                            }
+
                             Button {
                                 visible: model.modelData.configItem!==null
                                 anchors.margins: 10
+                                anchors.verticalCenter: parent.verticalCenter
                                 width: 20
                                 height: 20
                                 Image {

@@ -46,6 +46,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.margins: 10
                 columns: 2
+                rowSpacing: 2
                 Text {
                     Layout.columnSpan: 2
                     font.pixelSize: 24
@@ -54,35 +55,45 @@ Rectangle {
                 
                 Text {
                     text: "CallSign:"
+                    font.pixelSize: 14
                 }
                 Text {
                     text: model.CallSign
+                    font.pixelSize: 14
                 }
                 Text {
                     text: "Speed:"
+                    font.pixelSize: 14
                 }
                 Text {
                     text: model.Speed +" km/h"
+                    font.pixelSize: 14
                 }
                 Text {
                     text: "Altitude:"
+                    font.pixelSize: 14
                 }
                 Text {
                     text: model.Altitude +" m"
+                    font.pixelSize: 14
                 }
                 
                 Text {
                     text: "Departure Airport:"
+                    font.pixelSize: 14
                 }
                 Text {
                     text: model.AdditionalData.departureAirport || "Unknown"
+                    font.pixelSize: 14
                 }
                 
                 Text {
                     text: "Arrival Airport:"
+                    font.pixelSize: 14
                 }
                 Text {
                     text: model.AdditionalData.arrivalAirport || "Unknown"
+                    font.pixelSize: 14
                 }
             }
         }   

@@ -49,6 +49,7 @@ void FlightstatsProvider::setEnabled(bool en)
             QMutableHashIterator<int, PlaneInfo*> it (_planes);
             while(it.hasNext()) {
                 PlaneInfo* pi = it.next().value();
+                pi->aboutToBeRemoved();
                 it.remove();
                 emit planeRemoved(pi);
             }
