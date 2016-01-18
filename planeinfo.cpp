@@ -75,4 +75,9 @@ void PlaneInfo::setAdditionalData(const QVariantMap &additionalData)
     emit additionalDataChanged();
 }
 
+bool PlaneInfo::isAdditionalDataRequested() const
+{
+    return _dataRequested;
+}
+
 

@@ -20,41 +20,96 @@ ApplicationWindow {
     function bindCurrentPlane(button) {
         boundPlanes[button] = activePlane;
         if(activePlane) {
-            mapOfEurope.center = activePlane.CurrentCoordinate; //center plane in screen
             activePlaneIsBound = true;
             ioc.setState(button,true); //Turn on led for the corresponding button
+
+            //fix plane in map center, and subscribe to update events
+            mapOfEurope.center =activePlane.CurrentCoordinate;
+            activePlane.coordinateChanged.connect(updateActivePlaneData);
         }
     }
 
     //Opens the dialog for the passed plane, or closes the dialog if no valid plane is passed
     function openPlane(plane) {
-        if(!plane) {
-            closePlane();
+        if(!plane) { //no plane passed
+            closePlane(); //close instead
             return;
         }
-        activePlaneIsBound = false;
+
+        //remove existing connections to old active Plane
+        if(activePlane) {
+            activePlane.additionalDataChanged.disconnect(updateActivePlaneData);
+            activePlane.aboutToBeRemoved.disconnect(closePlane);
+            if(activePlaneIsBound) {
+                activePlane.coordinateChanged.disconnect(updateActivePlaneData);
+                activePlaneIsBound = false;
+            }
+        }
+
+        //Make new plane the "active plane" and subscribe to signals
         activePlane=plane;
+        activePlane.additionalDataChanged.connect(updateActivePlaneData); //to update the "route" of the plane
+        activePlane.aboutToBeRemoved.connect(closePlane); //close dialog if plane disappears
+
         for(var i=0; i<ioc.buttonCount(); i++) {
             //Turn led of button either on or off, depending on whether the button is bound to the current Plane
             if(boundPlanes[i] === plane) {
                 ioc.setState(i,true);
-                activePlaneIsBound = true;
-                mapOfEurope.center =plane.CurrentCoordinate;
+                if(!activePlaneIsBound) { //only if plane is not already bound
+                    //fix plane in map center, and subscribe to update events
+                    mapOfEurope.center =plane.CurrentCoordinate;
+                    activePlane.coordinateChanged.connect(updateActivePlaneData);
+                    activePlaneIsBound = true;
+                }
             } else {
                 ioc.setState(i,false);
             }
         }
-        detailsDialog.open(plane);
+
+        //Check if route data available and display it
+        if(plane.AdditionalData && plane.AdditionalData.route) {
+            mapRoute.path = plane.AdditionalData.route;
+            mapRoute.visible = true;
+        } else {
+            mapRoute.visible = false;
+        }
+
+        detailsDialog.open(plane); //open dialog
     }
 
     //Closes the details dialog
     function closePlane() {
         detailsDialog.close();
-        activePlaneIsBound = false;
-        activePlane=null;
+
+        //unsubscribe from all events, clear all vars
+        if(activePlane) {
+            activePlane.additionalDataChanged.disconnect(updateActivePlaneData);
+            activePlane.aboutToBeRemoved.disconnect(closePlane);
+            if(activePlaneIsBound) {
+                activePlane.coordinateChanged.disconnect(updateActivePlaneData);
+                activePlaneIsBound = false;
+            }
+            activePlane=null;
+        }
+
+        mapRoute.visible = false;
+
         //Turn all leds off
         for(var i=0; i<ioc.buttonCount(); i++) {
            ioc.setState(i,false);
+        }
+    }
+
+    //"Slot" that is called when properties of the current plane have changed and we need to update the map center/route
+    function updateActivePlaneData() {
+        if(activePlaneIsBound) {
+            mapOfEurope.center =activePlane.CurrentCoordinate;
+        }
+        if(activePlane.AdditionalData && activePlane.AdditionalData.route) {
+            mapRoute.path = activePlane.AdditionalData.route;
+            mapRoute.visible = true;
+        } else {
+            mapRoute.visible = false;
         }
     }
 
@@ -95,8 +150,7 @@ ApplicationWindow {
 
          MapPolyline {
             id: mapRoute
-            visible: detailsDialog.routeVisible
-            path: detailsDialog.routeData
+            visible: false
             line.color: "blue"
             line.width: 2
          }

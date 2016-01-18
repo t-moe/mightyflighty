@@ -15,8 +15,6 @@ Rectangle {
     anchors.bottom: parent.bottom
     anchors.margins: 5
     visible: false
-    property bool routeVisible : false;
-    property variant routeData : null;
     signal closed();
 
     function open(model) {
@@ -26,8 +24,6 @@ Rectangle {
     function close() {
         if(visible) {
             visible = false;
-            routeVisible = false;
-            routeData = null;
             closed();
         }
     }
@@ -87,15 +83,6 @@ Rectangle {
                 }
                 Text {
                     text: model.AdditionalData.arrivalAirport || "Unknown"
-                    onTextChanged: {
-                        //Hack, because I can't figure out a way to connect to additionalDataChanged of the model
-                        if(model.AdditionalData.route) {
-                            routeData = model.AdditionalData.route;
-                            routeVisible = true;
-                        } else {
-                            routeVisible = false;
-                        }
-                    }
                 }
             }
         }   

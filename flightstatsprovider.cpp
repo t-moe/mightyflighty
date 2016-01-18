@@ -135,9 +135,21 @@ void FlightstatsProvider::respFinished(QNetworkReply* repl)
                         PlaneInfo* pi = _planes[flightId];
                         oldPlanes.removeOne(pi);
                         if(pi->heading() != heading) pi->setHeading(heading);
-                        if(pi->currentCoordinate() != cord) pi->setCurrentCoordinate(cord);
+                        if(pi->currentCoordinate() != cord) {
+                            pi->setCurrentCoordinate(cord);
+                            if(pi->isAdditionalDataRequested()) {
+                                QVariantMap addData = pi->additionalData();
+                                if(addData.contains("route")) {
+                                    QVariantList pts = addData["route"].toList();
+                                    pts.append(QVariant::fromValue(cord));
+                                    addData["route"] = pts;
+                                    pi->setAdditionalData(addData);
+                                }
+                            }
+                        }
                         if(pi->altitude() != alt) pi->setAltitude(alt);
                         if(pi->speed() != speed) pi->setSpeed(speed);
+
                     }
                 }
 
@@ -146,6 +158,7 @@ void FlightstatsProvider::respFinished(QNetworkReply* repl)
                 while(it.hasNext()) {
                     PlaneInfo* pi = it.next().value();
                     if(oldPlanes.contains(pi)) {
+                        pi->aboutToBeRemoved();
                         it.remove();
                         qDebug() << "Plane removed:"<< pi->callSign();
                         emit planeRemoved(pi);

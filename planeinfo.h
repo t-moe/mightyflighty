@@ -10,10 +10,10 @@ class PlaneInfo : public QObject
     Q_OBJECT
     Q_PROPERTY(QGeoCoordinate CurrentCoordinate MEMBER _currentCoordinate NOTIFY coordinateChanged())
     Q_PROPERTY(QString CallSign MEMBER _callSign CONSTANT)
-    Q_PROPERTY(double Heading MEMBER _heading NOTIFY headingChanged)
-    Q_PROPERTY(int Altitude READ altitude WRITE setAltitude NOTIFY altitudeChanged)
-    Q_PROPERTY(int Speed READ speed WRITE setSpeed NOTIFY speedChanged)
-    Q_PROPERTY(QVariantMap AdditionalData READ additionalData WRITE setAdditionalData NOTIFY additionalDataChanged)
+    Q_PROPERTY(double Heading MEMBER _heading NOTIFY headingChanged())
+    Q_PROPERTY(int Altitude READ altitude WRITE setAltitude NOTIFY altitudeChanged())
+    Q_PROPERTY(int Speed READ speed WRITE setSpeed NOTIFY speedChanged())
+    Q_PROPERTY(QVariantMap AdditionalData READ additionalData WRITE setAdditionalData NOTIFY additionalDataChanged())
 public:
     explicit PlaneInfo(QString callSign, QGeoCoordinate coordinate, double heading);
 
@@ -35,6 +35,8 @@ public:
     QVariantMap additionalData();
     void setAdditionalData(const QVariantMap &additionalData);
 
+    bool isAdditionalDataRequested() const;
+
 private:
     bool _dataRequested;
     QVariantMap _additionalData;
@@ -51,6 +53,7 @@ signals:
     void speedChanged();
     void additionalDataChanged();
     void additionalDataRequested();
+    void aboutToBeRemoved();
 
 };
 
