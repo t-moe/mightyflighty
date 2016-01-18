@@ -1,27 +1,32 @@
 # MightyFlighty
 
-A simple flight tracking app written im qml/qt for the beagle bone black (embedded linux). This is a study project for the lecture "Embedded Linux".
-
+A simple flight tracking app written im qml/qt for the beagle bone black (embedded linux). This is a study project for the lecture "Embedded Linux".  
+We recommend reading the online version of this file on: https://github.com/t-moe/mightyflighty
 
 ## Prequisites
 
 * An up2date version of qt (at least 5.5) with the modules location, quick and qml.
 * An internet connection (otherwise some data providers won't work).
 * A synchronized clock on your linux (otherwise ssl connections will fail). Install ntp!
-* An API Key from flightstats.con (otherwise you cannot use the flighstats.com data provider). You can get a free evaluation account for 30 days here: https://developer.flightstats.com/getting-started.
+* An API Key from flightstats.com (otherwise you cannot use the flighstats.com data provider). Read below.
 
-## Installation
+## Installation & Start
 
-If you have been provided with an executable, just start it. BBB-Version will only work on the Beagle-Bone. x86 version will only work on PC.  
-If you only have the source-code, run `qmake` and `make` afterwards.
+If you have been provided with an executable, just start it.
+* `MightyFlightyBBB` will only work on the BeagleBone. 
+* `MightyFlightyX86` will only work on PC.
+
+If you want to build it yourself, you need to execute:
+* `qmake && make` to build it for PC
+* `/<ROOTFS_PATH>/usr/local/Qt5.5.1/bin/qmake MightyFlighty.pro -r -spec linux-arm-gnueabihf-g++ && make` to build it for the bbb
 
 ## Usage
 
 * Hold and drag the map around to control the visible area
 * Pinch to zoom
-* Click on a plane to see details about it.
-* Click on the gear icon to open the settings dialog, where you can change several app settings
-* Click on the arrow icon to terminate the application
+* Click on a plane, to see details about it.
+* Click on the gear icon, to open the settings dialog, where you can change several app settings
+* Click on the arrow icon, to terminate the application
 * Click on the center icon, to center the map on europe.
 
 The following features are only available on the bbb:
@@ -57,6 +62,6 @@ export QT_QPA_GENERIC_PLUGINS=tslib:/dev/input/event0
 
 ### How to get an API-Key for flightstats.com, and how to enter it on a device without keyboard?
 
-If you're lucky you've been provided with a file BFH.conf, which contains a valid evaulation API Key. Copy the file to `~/.config/MightyFlighty/BFH.conf`  
-If you're a stranger from the internet, reading this page, then you have to request your own API Key using the link above. You may enter the API-Key in the settings dialog of the application.
+If you're lucky you've been provided with a file `BFH.conf`, which contains a valid evaulation API Key. Copy the file to `~/.config/MightyFlighty/BFH.conf`  
+If you're a stranger from the internet, reading this page, then you have to request your own API Key. You can get a free evaluation account for 30 days here: https://developer.flightstats.com/getting-started. You may enter the API-Key in the settings dialog of the application.
 
