@@ -10,6 +10,28 @@ A simple flight tracking app written im qml/qt for the beagle bone black (embedd
 * A synchronized clock on your linux (otherwise ssl connections will fail). Install ntp!
 * An API Key from flightstats.con (otherwise you cannot use the flighstats.com data provider). You can get a free evaluation account for 30 days here: https://developer.flightstats.com/getting-started.
 
+## Installation
+
+If you have been provided with an executable, just start it. BBB-Version will only work on the Beagle-Bone. x86 version will only work on PC.  
+If you only have the source-code, run `qmake` and `make` afterwards.
+
+## Usage
+
+* Hold and drag the map around to control the visible area
+* Pinch to zoom
+* Click on a plane to see details about it.
+* Click on the gear icon to open the settings dialog, where you can change several app settings
+* Click on the arrow icon to terminate the application
+* Click on the center icon, to center the map on europe.
+
+The following features are only available on the bbb:
+
+* Use the poti to control the zoom level
+* After tapping on a plane (dialog opens), press any of the 4 buttons for some seconds in order to bind the plane to that button.
+* If you press (short) on a button where a plane is bound to, the plane will be fixed in the center of the map, until you close the dialog.
+* If you press (short) on a button where no plane is bound to, the current opened dialog will be closed.
+* If you want to unbind a button, press it for serveral seconds, while no dialog is open.
+
 
 ## Common problems
 

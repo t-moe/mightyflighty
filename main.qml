@@ -242,7 +242,11 @@ ApplicationWindow {
                 anchors.fill: parent
                 source: "center.png"
             }
-        onClicked: mapOfEurope.center = centerOfEurope
+        onClicked: {
+            if(!activePlaneIsBound) {
+                mapOfEurope.center = centerOfEurope;
+            }
+        }
     }
 
     DetailsDialog {
